@@ -1,0 +1,138 @@
+# If you have a `resume.json` file, copy it into `_data` and delete this file.
+# If you don't have a JSON Resume you can just edit this YAML file instead.
+# See also: <https://jsonresume.org/>.
+basics:
+  name: "Janghun Kim"
+  label: "Programmer"
+  picture: /assets/img/logo.png
+  email: "teekey.kim@gmail.com"
+  #phone: "(912) 555-4321"
+  #website: "https://piedpiper.com"
+  summary: |
+    Hi, I’m Janghun Kim and Master Student from University of Sungkyunkwan.
+    I majored Computer Graphics, especially Real-Time Rendering.
+    I'm a novice and I know for myself that I'm not good enough.
+    However, I'm confident that i will learn quickly and do well :)
+  # location:
+  #   address: "2712 Broadway St"
+  #   postalCode: "CA 94115"
+  #   city: "San Francisco"
+  #   countryCode: "US"
+  #   region: "California"
+  profiles:
+    - network: "Github"
+      username: "janghunn"
+      url: "https://github.com/janghunn"
+    - network: "LinkedIn"
+      username: "janghunn"
+      url: "https://www.linkedin.com/in/janghunn/"
+work:
+  - company: "Univ. of Sungkyunkwan, CG Lab."
+    position: "Real-Time Rendering Research"
+    website: "http://cg.skku.edu/"
+    startDate: "2021-01-01"
+    endDate: ""
+    summary: |
+      I majored in computer graphics and conducted research on Real-time rendering in University of Sungkyunkwan, CG Lab.
+
+      ACM SIGGRAPH, an International academic conference, approved one journal paper by the first author,
+      and KSC, a domestic academic conference, published one short paper by the first author
+    highlights:
+      - "(Journal Track) Potentially Visible Hidden-Volume Rendering for Multi-View Warping,
+        Janghun Kim and Sungkil Lee, ACM Trans. Graphics (Proc. SIGGRAPH’23)"
+      - "Keyword: Occlusion Culling, Visibility, Multi-Fragment Rendering, Geometric-based Inpainting Method"
+  - company: "SKKU, CG Lab. with ETRI (한국전자통신연구원)"
+    position: "Rendering Quality Improvement"
+    website: "http://cg.skku.edu/fund/"
+    startDate: "2022-06-01"
+    endDate: "2022-11-30"
+    summary: |
+      Using multiple-plane RGB images and additional Depth maps,
+      we worked on a project to synthesize and improve novel-views.
+    highlights:
+      - "A project to process novel-view images with known-view multiple-plane RGBZ images."
+      - "My role: Modifying the Encoding Format(add depth info.), Novel-View Synthesis using Forward Warping"
+  - company: "SKKU, CG Lab. with Samsung Electronics"
+    position: "Real-time Video Rendering "
+    website: "http://cg.skku.edu/fund/"
+    startDate: "2023-04-01"
+    endDate: "2023-08-30"
+    summary: |
+      For Security Reasons
+    highlights:
+      - "For Security Reasons"
+      - "My role: C++ programming, Shader Programming"      
+# volunteer:
+#   - organization: "CoderDojo"
+#     position: "Teacher"
+#     website: "https://coderdojo.com/"
+#     startDate: "2012-01-01"
+#     endDate: "2013-01-01"
+#     summary: "Global movement of free coding clubs for young people."
+#     highlights:
+#       - "Awarded 'Teacher of the Month'"
+education:
+  - institution: "University of Sungkyunkwan"
+    area: "Computer Science and Engineering"
+    studyType: "Bachelor"
+    startDate: "2017-03-01"
+    endDate: "2022-08-01"
+    gpa: "3.96"
+    # courses:
+    #   - "DB1101 - Basic SQL"
+    #   - "CS2011 - Java Introduction"
+  - institution: "University of Sungkyunkwan"
+    area: "Computer Science and Engineering"
+    studyType: "Master"
+    startDate: "2022-09-01"
+    endDate: ""
+    gpa: "4.0"    
+# awards:
+#   - title: "Digital Compression Pioneer Award"
+#     date: "2014-11-01"
+#     awarder: "Techcrunch"
+#     summary: "There is no spoon."
+publications:
+  - name: "Potentially Visible Hidden-Volume Rendering for Multi-View Warping"
+    publisher: "ACM"
+    releaseDate: "2023-08-01"
+    website: "http://cg.skku.edu/pub/2023-kim-siggraph-pvhv"
+    summary: "This paper presents the model and rendering algorithm of Potentially Visible Hidden Volumes (PVHVs) for multi-view image warping. PVHVs are 3D volumes that are occluded at a known source view, but potentially visible at novel views. Given a bound of novel views, we define PVHVs using the edges of foreground fragments from the known view and the bound of novel views. PVHVs can be used to batch-test the visibilities of source fragments without iterating individual novel views in multi-fragment rendering, and thereby, cull redundant fragments prior to warping. We realize the model of PVHVs in Depth Peeling (DP). Our Effective Depth Peeling (EDP) can reduce the number of completely hidden fragments, capture important fragments early, and reduce warping cost. We demonstrate the benefit of our PVHVs and EDP in terms of memory, quality, and performance in multi-view warping."
+    highlights:
+      - "ACM Trans. Graphics (Proc. SIGGRAPH), 42(4), 86:1–11, 2023."
+      - "(Submitted) Jan. 25, (Accepted) Apr. 28, (Published) Jul. 26, 2023"
+      - "IF=6.2, PCTL=90.3. ISSN: 0730-0301, ACM, USA"
+skills:
+  - name: "C++ Application Development"
+    level: "junior"
+    keywords:
+      - "C++"
+  - name: "Shader Programming"
+    level: "junior"
+    keywords:
+      - "OpenGL"
+      - "GLSL"      
+  - name: "Sociability"
+    level: "master"
+    keywords:
+      - "Leadership"
+      - "Affable"            
+  # - name: "Compression"
+  #   level: "Master"
+  #   keywords:
+  #     - "Mpeg"
+  #     - "MP4"
+  #     - "GIF"
+# languages:
+#   - language: "English"
+#     fluency: "Native speaker"
+# interests:
+#   - name: ""
+#     keywords:
+#       - "Ferrets"
+#       - "Unicorns"
+# references:
+#   - name: "Erlich Bachman"
+#     reference: >
+#       It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
+#       Company proved that he will be a valuable addition to any company.

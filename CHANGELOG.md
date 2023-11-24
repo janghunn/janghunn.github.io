@@ -105,9 +105,9 @@ Version 9.1 provides minor design changes, new features, and closes multiple iss
     ```yml
     # file: "resume.md"
     buttons:
-      print: true
+      #print: true
       pdf: /assets/Resume.pdf
-      vcf: http://h2vx.com/vcf/<!--url-->
+      #vcf: http://h2vx.com/vcf/<!--url-->
       json: /assets/resume.json
     ```
 
