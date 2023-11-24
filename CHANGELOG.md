@@ -106,7 +106,7 @@ Version 9.1 provides minor design changes, new features, and closes multiple iss
     # file: "resume.md"
     buttons:
       print: true
-      pdf: /assets/Resume.pdf
+      pdf: /assets/resume.pdf
       vcf: http://h2vx.com/vcf/<!--url-->
       json: /assets/resume.json
     ```
