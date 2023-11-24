@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Janghun Kim</title>
+    <meta name="description" content="Hi, I’m Janghun Kim and Master Student from University of Sungkyunkwan.
+I majored Computer Graphics, especially Real-Time Rendering.
+I&#x27;m a novice and I know for myself that I&#x27;m not good enough.
+However, I&#x27;m confident that i will learn quickly and do well :)
+">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <style>:root {
+  /* Colors */
+  --primaryColor: #212529;
+  --secondaryColor: #95a5a6;
+  --accentColor: #f1c40f;
+  --linkColor: #2ecc71;
+  --mutedColor: #f4f6f6;
+
+  /* Typography */
+  --ratio: 1.25;
+  --scale0: 1rem;
+  --scale1: calc(var(--scale0) * var(--ratio));
+  --scale2: calc(var(--scale1) * var(--ratio));
+  --scale3: calc(var(--scale2) * var(--ratio));
+  --scale4: calc(var(--scale3) * var(--ratio));
+  --scale5: calc(var(--scale4) * var(--ratio));
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  color: var(--primaryColor);
+  display: grid;
+  font: 1em/1.5 Lato, sans-serif;
+  gap: 2em;
+  grid-template-columns:
+    [full-start]
+    1fr
+    [main-start side-start]
+    minmax(min-content, 12em)
+    [side-end content-start]
+    minmax(min-content, 36em)
+    [main-end content-end]
+    1fr
+    [full-end];
+  grid-template-rows: auto [content] 0;
+  margin-bottom: 4em;
+}
+
+body::before {
+  content: '';
+  grid-column: full;
+  grid-row: content;
+}
+
+ol,
+ul {
+  padding-left: 1em;
+}
+
+li + li {
+  margin-top: 0.2em;
+}
+
+li::marker {
+  color: var(--mutedColor);
+}
+
+a {
+  color: var(--linkColor);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:focus,
+a:hover {
+  color: var(--accentColor);
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--scale5);
+}
+
+h2 {
+  color: var(--secondaryColor);
+  font-size: var(--scale4);
+}
+
+h3 {
+  color: var(--accentColor);
+  font-size: var(--scale3);
+  grid-column: side;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: var(--scale2);
+}
+
+h5 {
+  font-size: var(--scale1);
+}
+
+h6 {
+  font-size: var(--scale0);
+}
+
+blockquote {
+  border-left: 0.2em solid var(--mutedColor);
+  padding-left: 1em;
+}
+
+cite {
+  color: var(--secondaryColor);
+  font-style: inherit;
+}
+
+cite::before {
+  content: '— ';
+}
+
+.masthead {
+  background: var(--mutedColor);
+  display: inherit;
+  gap: inherit;
+  grid-column: full;
+  grid-template-columns: inherit;
+  padding: 4em 0;
+  row-gap: 0;
+}
+
+.masthead > *,
+section {
+  grid-column: main;
+}
+
+article > * + *,
+blockquote > * + * {
+  margin-top: 0.6em;
+}
+
+.stack {
+  display: grid;
+  gap: 1.5em;
+}
+
+.grid-list {
+  display: grid;
+  gap: 1em;
+}
+
+.spaced-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.spaced-list:first-child::before {
+  border-bottom: 1px solid var(--mutedColor);
+  content: '';
+  flex-grow: 1;
+  margin: 0 1em;
+  order: 1;
+}
+
+.spaced-list > :nth-child(2) {
+  order: 2;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.tag-list > li {
+  background: var(--mutedColor);
+  margin: 0 0.2em 0.2em 0;
+  padding: 0.2em 0.6em;
+}
+
+@media print, (min-width: 48em) {
+  h3 {
+    text-align: right;
+    margin-bottom: inherit;
+  }
+
+  .masthead > *,
+  section {
+    grid-column: content;
+  }
+
+  section {
+    display: contents;
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
+  </head>
+  <body>
+      <header class="masthead">
+          <h1>Janghun Kim</h1>
+          <h2>Programmer</h2>
+      </header>
+      <section id="contact">
+        <h3>Contact</h3>
+        <div class="grid-list">
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:teekey.kim@gmail.com">teekey.kim@gmail.com</a>
+            </div>
+        </div>
+      </section>
+        <section id="about">
+          <h3>About</h3>
+          <article>
+            <p>Hi, I’m Janghun Kim and Master Student from University of Sungkyunkwan.
+      I majored Computer Graphics, especially Real-Time Rendering.
+      I'm a novice and I know for myself that I'm not good enough.
+      However, I'm confident that i will learn quickly and do well :)</p>
+      
+          </article>
+        </section>
+        <section id="profiles">
+          <h3>Profiles</h3>
+          <div class="grid-list">
+              <div>
+                  <h4>Github</h4>
+                    <a href="https://github.com/janghunn">janghunn</a>
+              </div>
+              <div>
+                  <h4>LinkedIn</h4>
+                    <a href="https://www.linkedin.com/in/janghunn/">janghunn</a>
+              </div>
+          </div>
+        </section>
+
+      <section id="work">
+        <h3>Work</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4></h4>
+                  <span>
+                    <time datetime="2021-01-01">Jan 2021</time> –
+                    Present
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Master Student</strong>
+                </div>
+              </header>
+                <p>I majored in computer graphics and conducted research on Real-time rendering in University of Sungkyunkwan, CG Lab.</p>
+    <p>ACM SIGGRAPH, an International academic conference, approved one journal paper by the first author,
+    and KSC, a domestic academic conference, published one short paper by the first author</p>
+    
+                <h5>Highlights</h5>
+                <ul>
+                    <li>(Journal Track) Potentially Visible Hidden-Volume Rendering for Multi-View Warping, Janghun Kim and Sungkil Lee, ACM Trans. Graphics (Proc. SIGGRAPH’23)</li>
+                    <li>Keyword: Visibility, Geometric-based Inpainting Method, Post-Processing</li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4></h4>
+                  <span>
+                    <time datetime="2022-06-01">Jun 2022</time> –
+                    <time datetime="2022-11-30">Nov 2022</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Student Researcher</strong>
+                </div>
+              </header>
+                <p>Using multiple-plane RGB images and additional Depth maps,
+    we worked on a project to synthesize and improve novel-views.</p>
+    
+                <h5>Highlights</h5>
+                <ul>
+                    <li>A project to process novel-view images with known-view multiple-plane RGBZ images.</li>
+                    <li>My role: Modifying the Encoding Format(add depth info.), Novel-View Synthesis using Forward Warping</li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4></h4>
+                  <span>
+                    <time datetime="2023-04-01">Apr 2023</time> –
+                    <time datetime="2023-08-30">Aug 2023</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Student Researcher</strong>
+                </div>
+              </header>
+                <p>[SECURITY]</p>
+    
+                <h5>Highlights</h5>
+                <ul>
+                    <li>[SECURITY]</li>
+                    <li>My role: C++ programming, Shader Programming</li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4></h4>
+                  <span>
+                    <time datetime="2023-10-10">Oct 2023</time> –
+                    <time datetime="2023-08-30">Aug 2023</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Intern</strong>
+                </div>
+              </header>
+                <p>I worked on a real-time depth-of-field implementation project using post-processing techniques.
+    Over the course of 8 weeks, I received feedback from senior rendering engineers, and completed a high-quality depth-of-field rendering that runs at approximately 1.1ms on an RTX 3060 environment.</p>
+    
+                <h5>Highlights</h5>
+                <ul>
+                    <li>Reference Depth-of-Field Method: https://www.iryoku.com/next-generation-post-processing-in-call-of-duty-advanced-warfare/</li>
+                    <li>keyword: Scatter-As-You-Gather, Guided Filtering, Background Reconstruction, Karis average, Optimization by CoC</li>
+                </ul>
+            </article>
+        </div>
+      </section>
+      <section id="education">
+        <h3>Education</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>University of Sungkyunkwan</h4>
+                  <span>
+                    <time datetime="2017-03-01">Mar 2017</time> –
+                    <time datetime="2022-08-01">Aug 2022</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Computer Science and Engineering</strong>
+                </div>
+              </header>
+                <p>Bachelor</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>University of Sungkyunkwan</h4>
+                  <span>
+                    <time datetime="2022-09-01">Sep 2022</time> –
+                    Present
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Computer Science and Engineering</strong>
+                </div>
+              </header>
+                <p>Master</p>
+            </article>
+        </div>
+      </section>
+      <section id="publications">
+        <h3>Publications</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>모션 조작 요소 기반의 볼륨 변형 애니메이션 저작 및 생성 기법</h4>
+                    <time datetime="2021-12-01">Dec 2021</time>
+                </div>
+                <div class="spaced-list">
+                    <span>
+                      Published by <strong>KSC</strong>
+                    </span>
+                </div>
+              </header>
+                <p>볼륨의 직접 변형 기법과 달리 조작점 기반의 간접 변형 기법은 최소한의 사용자 조작 기반으로 볼륨 전체에 적용되는 역동적인 효과를 생성할 수 있다. 본 논문은 모션 조작 요소기반으로 볼륨을 변형하는 기법을 제안한다. 제안하는 기법은 조작점 기반으로 저수준의 모션 조작 요소를 정의하고, 고수준에서 그 요소들을 시공간적으로 조합하여 볼륨 변형을 시도한다. 고수준의 모션 조합은 사용자의 의도와 일치하게 수동으로 조합할 수 있고, 또한 랜덤 조합을 통해 새롭게 변형된 애니메이션을 생성할 수도 있다. 수동 조합은 형체가 존재하는 사물이나 생물의 직관적 변형에 적합하고, 랜덤 조합은 불규칙한 형태의 객체에서 새로운 애니메이션을 생성하는데 적합하다.</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Potentially Visible Hidden-Volume Rendering for Multi-View Warping</h4>
+                    <time datetime="2023-08-01">Aug 2023</time>
+                </div>
+                <div class="spaced-list">
+                    <span>
+                      Published by <strong>ACM</strong>
+                    </span>
+                </div>
+              </header>
+                <p>This paper presents the model and rendering algorithm of Potentially Visible Hidden Volumes (PVHVs) for multi-view image warping. PVHVs are 3D volumes that are occluded at a known source view, but potentially visible at novel views. Given a bound of novel views, we define PVHVs using the edges of foreground fragments from the known view and the bound of novel views. PVHVs can be used to batch-test the visibilities of source fragments without iterating individual novel views in multi-fragment rendering, and thereby, cull redundant fragments prior to warping. We realize the model of PVHVs in Depth Peeling (DP). Our Effective Depth Peeling (EDP) can reduce the number of completely hidden fragments, capture important fragments early, and reduce warping cost. We demonstrate the benefit of our PVHVs and EDP in terms of memory, quality, and performance in multi-view warping.</p>
+            </article>
+        </div>
+      </section>
+      <section id="skills">
+        <h3>Skills</h3>
+        <div class="grid-list">
+            <div>
+                <h4>C++ Application Development</h4>
+                <ul class="tag-list">
+                    <li>C++</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Shader Programming</h4>
+                <ul class="tag-list">
+                    <li>OpenGL</li>
+                    <li>GLSL</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Sociability</h4>
+                <ul class="tag-list">
+                    <li>Leadership</li>
+                    <li>Affable</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+  </body>
+</html>
