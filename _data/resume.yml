@@ -28,7 +28,7 @@ basics:
       url: "https://www.linkedin.com/in/janghunn/"
 work:
   - company: "Univ. of Sungkyunkwan, CG Lab."
-    position: "Real-Time Rendering Research"
+    position: "Master Student"
     website: "http://cg.skku.edu/"
     startDate: "2021-01-01"
     endDate: ""
@@ -42,7 +42,7 @@ work:
         Janghun Kim and Sungkil Lee, ACM Trans. Graphics (Proc. SIGGRAPH’23)"
       - "Keyword: Occlusion Culling, Visibility, Multi-Fragment Rendering, Geometric-based Inpainting Method"
   - company: "SKKU, CG Lab. with ETRI (한국전자통신연구원)"
-    position: "Rendering Quality Improvement"
+    position: "Student Researcher"
     website: "http://cg.skku.edu/fund/"
     startDate: "2022-06-01"
     endDate: "2022-11-30"
@@ -53,15 +53,25 @@ work:
       - "A project to process novel-view images with known-view multiple-plane RGBZ images."
       - "My role: Modifying the Encoding Format(add depth info.), Novel-View Synthesis using Forward Warping"
   - company: "SKKU, CG Lab. with Samsung Electronics"
-    position: "_For Security Reasons_"
+    position: "Student Researcher"
     website: #"http://cg.skku.edu/fund/"
     startDate: "2023-04-01"
     endDate: "2023-08-30"
     summary: |
-      _For Security Reasons_
+      [SECURITY]
     highlights:
-      - "_For Security Reasons_"
+      - "[SECURITY]"
       - "My role: C++ programming, Shader Programming"      
+  - company: "PearlAbyss - Game Engine Graphics Team"
+    position: "Intern"
+    website: #"http://cg.skku.edu/fund/"
+    startDate: "2023-04-01"
+    endDate: "2023-08-30"
+    summary: |
+      [SECURITY]
+    highlights:
+      - "[SECURITY]"
+      - "My role: C++ programming, Shader Programming"          
 # volunteer:
 #   - organization: "CoderDojo"
 #     position: "Teacher"
