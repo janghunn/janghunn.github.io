@@ -64,14 +64,15 @@ work:
       - "My role: C++ programming, Shader Programming"      
   - company: "PearlAbyss - Game Engine Graphics Team"
     position: "Intern"
-    website: #"http://cg.skku.edu/fund/"
-    startDate: "2023-04-01"
+    website: https://www.pearlabyss.com
+    startDate: "2023-10-10"
     endDate: "2023-08-30"
     summary: |
-      [SECURITY]
+      I worked on a real-time depth-of-field implementation project using post-processing techniques.
+      Over the course of 8 weeks, I received feedback, made adjustments, and completed a high-quality depth-of-field rendering that runs at approximately 1.1ms on an RTX 3060 environment.
     highlights:
-      - "[SECURITY]"
-      - "My role: C++ programming, Shader Programming"          
+      - "Reference: https://www.iryoku.com/next-generation-post-processing-in-call-of-duty-advanced-warfare/"
+      - "keyword: Scatter-As-You-Gather, Guided Filtering, Background Reconstruction, Karis average, Optimization by CoC"          
 # volunteer:
 #   - organization: "CoderDojo"
 #     position: "Teacher"
