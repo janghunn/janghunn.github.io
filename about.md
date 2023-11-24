@@ -28,8 +28,7 @@ redirect_from:
 |2017.03|2022.08|성균관대학교 소프트웨어학과 졸업|
 |2019.03|2020.10|육군 병장만기 전역|
 |2022.09|~~2024.08~~|성균관대학교 소프트웨어학과 컴퓨터그래픽스 전공 석사과정 (~ing)|
-|2021.06|2023.08|_Potentially Visible Hidden-Volume Rendering for Multi-View Warping_ 연구|
-|2023.10|2023.11|PearlAbyss Tech Intership - Game Engine 수료|
+|2023.10|2023.11|_PearlAbyss Tech Intership - Game Engine_ 수료|
 
 ## 2023년 목표
 
