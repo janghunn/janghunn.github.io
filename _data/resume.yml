@@ -53,14 +53,14 @@ work:
       - "A project to process novel-view images with known-view multiple-plane RGBZ images."
       - "My role: Modifying the Encoding Format(add depth info.), Novel-View Synthesis using Forward Warping"
   - company: "SKKU, CG Lab. with Samsung Electronics"
-    position: "Real-time Video Rendering "
-    website: "http://cg.skku.edu/fund/"
+    position: "_For Security Reasons_"
+    website: #"http://cg.skku.edu/fund/"
     startDate: "2023-04-01"
     endDate: "2023-08-30"
     summary: |
-      For Security Reasons
+      _For Security Reasons_
     highlights:
-      - "For Security Reasons"
+      - "_For Security Reasons_"
       - "My role: C++ programming, Shader Programming"      
 # volunteer:
 #   - organization: "CoderDojo"
