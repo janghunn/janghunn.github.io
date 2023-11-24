@@ -30,18 +30,6 @@ redirect_from:
 |2022.09|~~2024.08~~|성균관대학교 소프트웨어학과 컴퓨터그래픽스 전공 석사과정 (~ing)|
 |2023.10|2023.11|_PearlAbyss Tech Intership - Game Engine_ 수료|
 
-## 2023년 목표
-
-현재 나는 개발자로서 첫 걸음을 내딛고 있다고 생각한다.
-개발자로서의 나의 능력은 컴공 학부 졸이라고 말하기 부끄러울 정도.
-
-남은 세 달 동안 
-* 일단 붙은 _Pearl Abyss_ 게임 인전 테크인턴 잘 마무리하기
-* C++ 공부 (Effective C++, Effective Modern C++)
-* 석사 졸업 관련 행정 처리 하기 (OPIC, 학위논문)
-
-그래픽스 공부도 하고 싶지만 욕심 부리지 말고 내년에.
-
 [blog]: /
 [portfolio]: https://hydejack.com/examples/
 [resume]: https://hydejack.com/resume/
