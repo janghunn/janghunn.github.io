@@ -40,7 +40,7 @@ work:
     highlights:
       - "(Journal Track) Potentially Visible Hidden-Volume Rendering for Multi-View Warping,
         Janghun Kim and Sungkil Lee, ACM Trans. Graphics (Proc. SIGGRAPH’23)"
-      - "Keyword: Occlusion Culling, Visibility, Multi-Fragment Rendering, Geometric-based Inpainting Method"
+      - "Keyword: Visibility, Geometric-based Inpainting Method, Post-Processing"
   - company: "SKKU, CG Lab. with ETRI (한국전자통신연구원)"
     position: "Student Researcher"
     website: "http://cg.skku.edu/fund/"
@@ -69,9 +69,9 @@ work:
     endDate: "2023-08-30"
     summary: |
       I worked on a real-time depth-of-field implementation project using post-processing techniques.
-      Over the course of 8 weeks, I received feedback, made adjustments, and completed a high-quality depth-of-field rendering that runs at approximately 1.1ms on an RTX 3060 environment.
+      Over the course of 8 weeks, I received feedback from senior rendering engineers, and completed a high-quality depth-of-field rendering that runs at approximately 1.1ms on an RTX 3060 environment.
     highlights:
-      - "Reference: https://www.iryoku.com/next-generation-post-processing-in-call-of-duty-advanced-warfare/"
+      - "Reference Depth-of-Field Method: https://www.iryoku.com/next-generation-post-processing-in-call-of-duty-advanced-warfare/"
       - "keyword: Scatter-As-You-Gather, Guided Filtering, Background Reconstruction, Karis average, Optimization by CoC"          
 # volunteer:
 #   - organization: "CoderDojo"
