@@ -54,7 +54,7 @@ work:
       - "My role: Modifying the Encoding Format(add depth info.), Novel-View Synthesis using Forward Warping"
   - company: "SKKU, CG Lab. with Samsung Electronics"
     position: "Student Researcher"
-    website: #"http://cg.skku.edu/fund/"
+    website: "https://www.samsung.com/sec/aboutsamsung/home/"
     startDate: "2023-04-01"
     endDate: "2023-08-30"
     summary: |
