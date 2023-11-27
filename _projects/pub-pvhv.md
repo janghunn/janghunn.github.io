@@ -16,8 +16,8 @@ links:
     url: https://dl.acm.org/doi/abs/10.1145/3592108
 accent_color: '#4fb1ba'
 accent_image:
-  background: '#193747'
-theme_color: '#193747'
+  background: '#bf6224'
+theme_color: '#bf6224'
 sitemap: false
 ---
 
