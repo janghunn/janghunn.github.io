@@ -34,15 +34,6 @@ We demonstrate the benefit of our PVHVs and EDP in terms of memory, quality, and
 [paper](https://cg.skku.edu/pub/papers/2023-kim-siggraph-pvhv-cam.pdf), [slide](https://cg.skku.edu/pub/papers/2023-kim-siggraph-pvhv-slides.pdf), 
 [code](https://github.com/cgskku/pvhv)
 
----
-2021년 1월 연구실에 학부연구생으로 들어간 후, 2021년 6월부터 2023년 8월까지 진행한 내 첫번째 논문이다. 
-
-교수님이 처음에 "지금 시점에서는 안보이는데 머리를 약간 움직이면 보이는 것들을 미리 알 수 있을까?" 라는 방향을 시작으로, 2번의 _rejection_, 총 3번의 _submission_ 으로 너무나도 좋은 마무리를 지을 수 있었다. 
-
-오랜 기간 교수님에게 피드백을 받았고, 이론과 알고리즘 쪽에서 많은 시간을 재밌게 고민할 수 있었다. (진심으로 감사하다)
-
-논문의 처음부터 끝까지 경험해볼 수 있는 소중한 기회였고, 너무나도 많은 것을 배울 수 있었다.
-
 <!-- ```yml
 google_fonts: false
 font:         false
