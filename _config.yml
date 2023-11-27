@@ -49,16 +49,16 @@ author:
 
 # Add links to the sidebar.
 menu:
-  #- title:             Posts
-  #  url:               /blog/
-  # - title:             Projects
-  #   url:               /projects/
+  - title:             Posts
+    url:               /blog/
+   - title:             Projects
+     url:               /projects/
   - title:             About
     url:               /about/  
   - title:             Resume
     url:               /resume/
-  # - title:             Documentation
-  #   url:               /docs/
+   - title:             Documentation
+     url:               /docs/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
