@@ -3,8 +3,7 @@ layout: welcome
 title:  Welcome
 cover:  true
 selected_projects:
-  - _projects/hydejack-v6.md
-  - /projects/hyde-v2/
+  - _projects/pub-pvhv.md
 projects_page: projects.md
 featured: false
 ---

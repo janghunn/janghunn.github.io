@@ -34,6 +34,8 @@ redirect_from:
 |2022.09|~~2024.08~~|성균관대학교 소프트웨어학과 컴퓨터그래픽스 전공 __석사과정__ (_~ing_)|
 |2023.10|2023.11|_PearlAbyss Tech Intership - Game Engine_ __수료__|
 
+<!--author-->
+
 [blog]: /
 [portfolio]: https://hydejack.com/examples/
 [resume]: https://hydejack.com/resume/

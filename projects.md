@@ -1,6 +1,6 @@
 ---
 layout: projects
-title: 플 젝
+title: Projects
 show_collection: projects
 description: >
   Projects I did :)
