@@ -1,15 +1,9 @@
 ---
 layout: about
-image: /assets/img/blog/hydejack-9.jpg
-description: >
-  A boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
-hide_description: true
-redirect_from:
-  - /download/
+title:  나
 ---
 
-## '나'
+## 설명
 
 - 나는 요즘도 어려운 기하 문제를 유투브에서 보고 푸는데 시간을 보냄.
 
