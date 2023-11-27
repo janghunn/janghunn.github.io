@@ -1,3 +1,9 @@
+---
+layout: welcome
+title:  Welcome
+cover:  true
+---
+
 # Hydejack
 
 A boutique Jekyll theme for hackers, nerds, and academics.  
