@@ -8,7 +8,7 @@ projects_page: projects.md
 featured: false
 ---
 
-렌더링을 공부하고 있는 예비 개발자입니다.
+차근차근 쌓아나갈 예정.
 
 ## 논문
 
