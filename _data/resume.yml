@@ -9,10 +9,10 @@ basics:
   #phone: "(912) 555-4321"
   #website: "https://piedpiper.com"
   summary: |
-    Hi, I’m Janghun Kim and Master Student from University of Sungkyunkwan.
-    I majored Computer Graphics with a focus on real-time rendering techniques.
-    Currently, I consider myself a novice in programming and acknowledge that I have room for improvement
-    So, I am eager to learn quickly and excel in my studies :)
+    안녕하세요, 저는 성균관대학교에서 석사과정 중인 김장훈 입니다.
+    저는 컴퓨터그래픽스를 전공하고, 그 중 Real-Time Rendering 분야를 연구하였습니다.
+    솔직하게 현재 저는 프로그래밍적으로 초보자라고 생각하고 이제부터 차근차근 성장해보려고 합니다.
+    수학과 물리를 좋아하는 저의 흥미를 살려 렌더링 엔지니어가 되고 싶습니다 :)
   # location:
   #   address: "2712 Broadway St"
   #   postalCode: "CA 94115"
