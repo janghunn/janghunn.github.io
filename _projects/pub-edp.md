@@ -31,10 +31,7 @@ We realize the model of PVHVs in Depth Peeling (DP). Our Effective Depth Peeling
 
 We demonstrate the benefit of our PVHVs and EDP in terms of memory, quality, and performance in multi-view warping.
 
-[paper](https://cg.skku.edu/pub/papers/2023-kim-siggraph-pvhv-cam.pdf)
-
-[slide](https://cg.skku.edu/pub/papers/2023-kim-siggraph-pvhv-slides.pdf)
-
+[paper](https://cg.skku.edu/pub/papers/2023-kim-siggraph-pvhv-cam.pdf), [slide](https://cg.skku.edu/pub/papers/2023-kim-siggraph-pvhv-slides.pdf), 
 [code](https://github.com/cgskku/pvhv)
 
 ---
