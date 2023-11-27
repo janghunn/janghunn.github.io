@@ -1,0 +1,53 @@
+---
+layout: project
+title: 'Potentially Visible Hidden-Volume Rendering for Multi-View Warping'
+caption: ACM Trans. Graphics (Proc. SIGGRAPH), 42(4), 86:1-11, 2023.
+description: >
+(Submitted) Jan. 25, (Accepted) Apr. 28, (Published) Jul. 26, 2023, 
+IF=6.2, PCTL=90.3. ISSN=0730-0301, ACM, USA
+
+date: 26 Jul 2023
+image: 
+  path: /assets/img/projects/pvhv.jpg
+  srcset: 
+    1920w: /assets/img/projects/pvhv.jpg
+    960w:  /assets/img/projects/pvhv.jpg
+    480w:  /assets/img/projects/pvhv.jpg
+links:
+  - title: Link
+    url: https://dl.acm.org/doi/abs/10.1145/3592108
+accent_color: '#4fb1ba'
+accent_image:
+  background: '#193747'
+theme_color: '#193747'
+sitemap: false
+---
+
+This paper presents the model and rendering algorithm of Potentially Visible Hidden Volumes (PVHVs) for multi-view image warping. 
+
+PVHVs are 3D volumes that are occluded at a known source view, but potentially visible at novel views. Given a bound of novel views, we define PVHVs using the edges of foreground fragments from the known view and the bound of novel views.
+
+PVHVs can be used to batch-test the visibilities of source fragments without iterating individual novel views in multi-fragment rendering, and thereby, cull redundant fragments prior to warping.
+
+We realize the model of PVHVs in Depth Peeling (DP). Our Effective Depth Peeling (EDP) can reduce the number of completely hidden fragments, capture important fragments early, and reduce warping cost.
+
+We demonstrate the benefit of our PVHVs and EDP in terms of memory, quality, and performance in multi-view warping.
+
+---
+2021년 1월 연구실에 학부연구생으로 들어간 후, 2021년 6월부터 2023년 8월까지 진행한 내 첫번째 논문이다. 
+
+교수님이 처음에 "지금 시점에서는 안보이는데 머리를 약간 움직이면 보이는 것들을 미리 알 수 있을까?" 라는 방향을 시작으로, 2번의 _rejection_, 총 3번의 _submission_ 으로 너무나도 좋은 마무리를 지을 수 있었다. 
+
+오랜 기간 교수님에게 피드백을 받았고, 이론과 알고리즘 쪽에서 많은 시간을 재밌게 고민할 수 있었다. (진심으로 감사하다)
+
+논문의 처음부터 끝까지 경험해볼 수 있는 소중한 기회였고, 너무나도 많은 것을 배울 수 있었다.
+
+<!-- ```yml
+google_fonts: false
+font:         false
+font_heading: false
+font_code:    false
+```
+
+The configuration I use to enable the system font on my site. Feel free to copy!
+{:.figcaption} -->
