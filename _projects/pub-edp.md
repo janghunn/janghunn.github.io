@@ -3,8 +3,7 @@ layout: project
 title: 'Potentially Visible Hidden-Volume Rendering for Multi-View Warping'
 caption: ACM Trans. Graphics (Proc. SIGGRAPH), 42(4), 86:1-11, 2023.
 description: >
-(Submitted) Jan. 25, (Accepted) Apr. 28, (Published) Jul. 26, 2023, 
-IF=6.2, PCTL=90.3. ISSN=0730-0301, ACM, USA
+    (Submitted) Jan. 25, (Accepted) Apr. 28, (Published) Jul. 26, 2023, IF=6.2, PCTL=90.3. ISSN=0730-0301, ACM, USA
 date: 26 Jul 2023
 image: 
   path: /assets/img/projects/qwtel.jpg
