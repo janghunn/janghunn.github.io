@@ -6,11 +6,11 @@ description: >
     (Submitted) Jan. 25, (Accepted) Apr. 28, (Published) Jul. 26, 2023, IF=6.2, PCTL=90.3. ISSN=0730-0301, ACM, USA
 date: 26 Jul 2023
 image: 
-  path: /assets/img/projects/qwtel.jpg
+  path: /assets/img/projects/pvhv.jpg
   srcset: 
-    1920w: /assets/img/projects/qwtel.jpg
-    960w:  /assets/img/projects/qwtel@0,5x.jpg
-    480w:  /assets/img/projects/qwtel@0,25x.jpg
+    1920w: /assets/img/projects/pvhv.jpg
+    960w:  /assets/img/projects/pvhv.jpg
+    480w:  /assets/img/projects/pvhv.jpg
 links:
   - title: Link
     url: https://dl.acm.org/doi/abs/10.1145/3592108
@@ -30,6 +30,8 @@ PVHVs can be used to batch-test the visibilities of source fragments without ite
 We realize the model of PVHVs in Depth Peeling (DP). Our Effective Depth Peeling (EDP) can reduce the number of completely hidden fragments, capture important fragments early, and reduce warping cost.
 
 We demonstrate the benefit of our PVHVs and EDP in terms of memory, quality, and performance in multi-view warping.
+
+---
 
 2021년 1월 연구실에 학부연구생으로 들어간 후, 2021년 6월부터 2023년 8월까지 진행한 내 첫번째 논문이다. 
 
