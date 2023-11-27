@@ -31,8 +31,13 @@ We realize the model of PVHVs in Depth Peeling (DP). Our Effective Depth Peeling
 
 We demonstrate the benefit of our PVHVs and EDP in terms of memory, quality, and performance in multi-view warping.
 
----
+[paper](https://cg.skku.edu/pub/papers/2023-kim-siggraph-pvhv-cam.pdf)
 
+[slide](https://cg.skku.edu/pub/papers/2023-kim-siggraph-pvhv-slides.pdf)
+
+[code](https://github.com/cgskku/pvhv)
+
+---
 2021년 1월 연구실에 학부연구생으로 들어간 후, 2021년 6월부터 2023년 8월까지 진행한 내 첫번째 논문이다. 
 
 교수님이 처음에 "지금 시점에서는 안보이는데 머리를 약간 움직이면 보이는 것들을 미리 알 수 있을까?" 라는 방향을 시작으로, 2번의 _rejection_, 총 3번의 _submission_ 으로 너무나도 좋은 마무리를 지을 수 있었다. 
