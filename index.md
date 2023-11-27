@@ -2,6 +2,11 @@
 layout: welcome
 title:  Welcome
 cover:  true
+selected_projects:
+  - _projects/hydejack-v6.md
+  - /projects/hyde-v2/
+projects_page: projects.md
+featured: false
 ---
 
 # Hydejack
@@ -21,7 +26,6 @@ It includes a blog that is suitable for both prose and technical documentation, 
 > Your complete presence on the web — A [blog], [portfolio], and [resume].
 
 
-
 ## A Personal Site That Won't Disappear
 
 **Hydejack** is 100% built on Open Source software, and is Open Source itself, save for parts of the PRO version. The PRO version is a one-time payment that gives you the right to use it forever.
@@ -29,8 +33,6 @@ It includes a blog that is suitable for both prose and technical documentation, 
 Hydejack is all static sites. _HTML_. All you need is a web server --- any web server --- to have a professional web presence that lasts a lifetime.
 
 **Hydejack** started out as a free blogging theme for Jekyll — and continues to be so.
-
-<!--posts-->
 
 ## An Impressive Portfolio
 A portfolio that's guaranteed to be impressive — no matter what you put into it.
