@@ -3,6 +3,8 @@ layout: about
 title:  나
 ---
 
+<!--author-->
+
 ## 설명
 
 - 나는 요즘도 어려운 기하 문제를 유투브에서 보고 푸는데 시간을 보냄.
@@ -16,8 +18,6 @@ title:  나
 > _Teekey_ 는 중고등학교때 다녔던 수학 선생님이 쓰던 닉네임.
 {:.lead}
 
----
-
 ## 내 인생
 
 |시작|끝|무엇|
@@ -28,7 +28,7 @@ title:  나
 |2022.09|~~2024.08~~|성균관대학교 소프트웨어학과 컴퓨터그래픽스 전공 __석사과정__ (_~ing_)|
 |2023.10|2023.11|_PearlAbyss Tech Intership - Game Engine_ __수료__|
 
-<!--author-->
+
 
 [blog]: /
 [portfolio]: https://hydejack.com/examples/
