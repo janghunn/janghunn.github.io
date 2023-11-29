@@ -3,6 +3,7 @@ layout: post
 title: 01 Memory Structure
 description: >
   stack, heap, static
+image: /assets/post-images/01-01.png
 sitemap: false
 hide_last_modified: true
 ---
