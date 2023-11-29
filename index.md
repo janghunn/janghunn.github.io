@@ -10,6 +10,10 @@ featured: false
 
 차근차근 쌓아나갈 예정.
 
+## 공부
+
+<!--posts-->
+
 ## 논문
 
 <!--projects-->
