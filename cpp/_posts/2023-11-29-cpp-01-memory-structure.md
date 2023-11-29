@@ -1,9 +1,8 @@
 ---
 layout: post
-title: 00. C++
-tags: cpp
+title: 01. Memory Structure
 description: >
-  cpp 정리 시작
+  stack, heap, static
 sitemap: false
 hide_last_modified: true
 ---
