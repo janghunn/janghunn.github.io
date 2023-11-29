@@ -3,7 +3,7 @@ layout: post
 title: 03 Resource Move
 description: >
   pointer, reference, l-value, r-value
-image: /assets/post-images/03-01.png
+image: /assets/post-images/03-05.png
 sitemap: false
 hide_last_modified: true
 ---
