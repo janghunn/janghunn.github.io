@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 01. Memory Structure
+title: 01 Memory Structure
 description: >
   stack, heap, static
 sitemap: false
 hide_last_modified: true
 ---
 
-# 01. Memory Structure
+# 01 Memory Structure
 
 cpp 개념을 다시 공부하기 위해 정리 시작.
 
