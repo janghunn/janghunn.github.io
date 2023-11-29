@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 00. C++
+tags: cpp
 description: >
   cpp 정리 시작
 sitemap: false
