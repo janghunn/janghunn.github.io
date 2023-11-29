@@ -25,7 +25,7 @@ int main()
 위 코드를 memory space에서 보면 다음과 같다.
 
 <p align="center">
-  <img src="./images/Pasted image 20230218193225.png" align="center" width="98%">
+  <img src="../../assets/post-images/Pasted image 20230218193225.png" align="center" width="98%">
   <figcaption align="center"></figcaption>
 </p>
 
