@@ -1,0 +1,35 @@
+---
+layout: post
+title: C++ 개념 정리
+description: >
+  cpp 정리 시작
+sitemap: false
+hide_last_modified: true
+---
+
+# Introduction
+
+cpp 개념을 다시 공부하기 위해 정리 시작.
+
+Reference: https://www.nocodeprogram.com/, Modern C++
+> 설명을 정말 잘해주시고, 그림을 잘 그려주셔서 이해가 잘 된다.
+
+- __목차__
+  - 01. Memory Structure
+  - 02. Compile Process
+  - 03. Resource Move
+  - 04. OOP
+  - 05. Inheritance
+  - 06. Smart Pointer
+  - 07. Template
+  - 08. Lambda
+  - 09. Vector
+  - 10. List
+  - 11. Set, Map, Hash
+  - 12. Types
+  - 13. Exception
+  - 14. Parallel Program
+
+*[HTML]: HyperText Markup Language
+*[CSS]: Cascading Style Sheets
+*[JS]: JavaScript
