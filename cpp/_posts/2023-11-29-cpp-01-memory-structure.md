@@ -7,7 +7,7 @@ sitemap: false
 hide_last_modified: true
 ---
 
-# Introduction
+# 01. Memory Structure
 
 cpp 개념을 다시 공부하기 위해 정리 시작.
 
