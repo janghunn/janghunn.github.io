@@ -24,7 +24,7 @@ int main()
 ```
 위 코드를 memory space에서 보면 다음과 같다.
 
-![](../../assets/post-images/Pasted%20image%2020230218193225.png)
+![](../../assets/post-images/01-01.png)
 
 ---
 <p align="center">
