@@ -24,13 +24,10 @@ int main()
 ```
 위 코드를 memory space에서 보면 다음과 같다.
 
-![](../../assets/post-images/01-01.png)
 
 ---
-<p align="center">
-  <img src="../../assets/post-images/Pasted image 20230218193225.png" align="center" width="98%">
-  <figcaption align="center"></figcaption>
-</p>
+![](../../assets/post-images/01-01.png)
+
 
 - (top 기준) stack은 top에서 부터 address가 증가하는 방향으로 진행된다. 
 - (첫 변수 기준) 처음 할당된 애 기준으로는 address가 감소하는 방향으로 진행된다.
@@ -166,10 +163,7 @@ int main()
   - function call에 의해서 결정, 즉 compiler가 결정한다.
   - stack frame = function + additional info. (argument, return address)
 
-<p align="center">
-  <img src="./images/Pasted image 20230218200139.png" align="center" width="98%">
-  <figcaption align="center"></figcaption>
-</p>
+![](../../assets/post-images/01-02.png)
 
 ---
 ```cpp
@@ -408,10 +402,7 @@ int main()
   - 또한, Stack은 순차적으로 Memory가 Allocation 되지만, Heap의 경우 그렇지 않고, Memory Allocator 마음대로 정해진다.
   - Compiler에 따라 stack에 순서, heap memory의 위치 또한 다르다.
 
-<p align="center">
-  <img src="./images/Pasted image 20230219185526.png" align="center" width="88%">
-  <figcaption align="center"></figcaption>
-</p>
+![](../../assets/post-images/01-03.png)
 
 ---
 ### Memory Leak Checking Tool
