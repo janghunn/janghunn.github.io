@@ -2,8 +2,8 @@
 layout: post
 title: 02 Compile Process
 description: >
-  stack, heap, static
-image: /assets/post-images/01-01.png
+  cpp, header, static/dynamic library
+image: /assets/post-images/02-01.png
 sitemap: false
 hide_last_modified: true
 ---
