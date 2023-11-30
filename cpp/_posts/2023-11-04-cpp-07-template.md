@@ -429,35 +429,6 @@ int main()
 
 > 아무튼 Over use 하면 안된다.
 
-<!-- ```cpp
-class Cat
-{
-public:
-	Cat(std::string name, int age): mName{std::move(name)}, mAge{age} {}
-	void print(std::ostream &os)
-	{
-		os<<mName<<","<<mAge<<"\n";
-	}
-private:
-	std::string mName;
-	int mAge;
-};
-
-int main()
-{
-	Cat kitty{"kitty", 3};
-	Cat nabi{"nabi", 3};
-
-	{
-		std::ofstream ofs{"test.txt"};
-		if(!ofs)
-		{
-			std::cout<<"cannot open the file\n";
-		}
-		kitty.print(ofs);
-		nabi.print(ofs);
-	}
-
-	return 0;
-}
-``` -->
+*[HTML]: HyperText Markup Language
+*[CSS]: Cascading Style Sheets
+*[JS]: JavaScript
