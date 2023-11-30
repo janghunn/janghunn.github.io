@@ -335,7 +335,89 @@ public:
 ---
 ## 6. Object Slicing
 
-> to be continue...
+### Example - object slicing
+
+```cpp
+#include <iostream>
+
+class Animal
+{
+public:
+	virtual void speak()
+	{
+		std::cout<<"animal speark\n";
+	}
+private:
+	double animalData = 0.0f;
+};
+
+class Cat: public Animal
+{
+public:
+	Cat(double d): catData(d){};
+	void speak override
+	{
+		std::cout<<"cat speak\n";
+	}
+private:
+	double catData;
+};
+
+int main()
+{
+	Cat kitty{1.0};
+	//kitty.speak();
+
+	Animal& animalRef = kitty; // 그냥 메모리만 가리킴
+	animalRef.speak();
+	std::cout<<"------------\n";
+
+	Animal animalObj = kitty; // copy constructor 진행, VT address는 복사 X
+	animalObj.speak();
+
+	return 0;
+}
+```
+
+- __분석__
+	- _Animal_ class의 reference로 _kitty_ 를 받으면 단지 기존의 memory를 가리키는 것
+		- virtual table은 기존의 _kitty_ 의 virtual table을 가리켜 _cat.speak()_ 이 call이 된다.
+	- 하지만, _Animal_ class의 object를 생성하면 copy constructor가 진행되기 때문에 double type의 data는 복사가 되지만, __virtual table의 경우 copy가 일어나지 않는다.__
+	- 그래서 기존의 생성할 때의 class인 _Animal_ 의 Virtual Table을 가리키고, _speak()_ 함수를 call을 했을 때, _cat_ class를 복사했더라도 생성할 때, 선언된 _Animal_ 의 _speak()_ 이 call이 된다.
+
+- __그림__
+
+![](../../assets/post-images/05-13.png)
+
+> 아마 그림을 보면 확실히 이해가 될 것이다.
+
+---
+### Object Slicing을 막는 방법
+
+__copy constructor__ 를 막아준다.
+
+```cpp
+Animal(const Animal& other) = delete;
+Animal& operator=(Animal other) =delete;
+```
+
+- 하지만, 이렇게 할 경우 derive class 끼리의 copy constructor도 막아버린다.
+	- 이를 또 해결하려면,
+
+```cpp
+Animal(const Animal& other) = delete;
+Animal& operator=(Animal other) = delete;
+virtual std::unique_ptr<Animal> clone();
+```
+
+- 이런 식의 방법이 존재하지만,
+- 제일 좋은 것은, 제일 위의 base class를 abstract class로 만드는 것이다.
+	- pure virtual function을 사용하고, member variable을 없애는 것이다.
+
+---
+### Operator Overloading
+
+derived operator를 전부 재정의 해야한다.
 
 *[HTML]: HyperText Markup Language
 *[CSS]: Cascading Style Sheets
