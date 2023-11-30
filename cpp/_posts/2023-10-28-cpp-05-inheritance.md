@@ -3,7 +3,7 @@ layout: post
 title: 05 Inheritance
 description: >
   base class, derive class, virtual function 
-image: /assets/post-images/05-01.png
+image: /assets/post-images/05-10.png
 sitemap: false
 hide_last_modified: true
 ---
