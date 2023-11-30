@@ -9,9 +9,9 @@ hide_last_modified: true
 ---
 
 # 03 Resource Move
+> 최대한 copy가 적게.
 
 ## pointer vs. reference 
-
 - pass by value
 - pass by pointer
 - pass by reference

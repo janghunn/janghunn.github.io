@@ -9,6 +9,7 @@ hide_last_modified: true
 ---
 
 # 02 Compile Process
+> 어떻게 실행되는가.
 
 ## 1. C++ Build Process
 > Source Code가 Compile 되어 Binary Code로 바뀌고, Computer는 그걸 읽어서 Program을 실행

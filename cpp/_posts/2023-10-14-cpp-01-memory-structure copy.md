@@ -11,6 +11,7 @@ hide_last_modified: true
 # 01 Memory Structure
 
 ## 1. Variables in Memory (Stack)
+> 모든 건 memory space에서 어떻게 돌아가는지 상상.
 
 ### Stack Memory
 
