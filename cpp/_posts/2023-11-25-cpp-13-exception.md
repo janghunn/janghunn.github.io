@@ -18,7 +18,6 @@ hide_last_modified: true
 - throw로 던질 때는 **R-Value**
 - catch로 받을 때는 **Reference**
 
-
 ```cpp
 #include<iostream>
 
