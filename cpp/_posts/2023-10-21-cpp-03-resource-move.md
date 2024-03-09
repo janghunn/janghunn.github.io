@@ -3,7 +3,7 @@ layout: post
 title: 03 Resource Move
 description: >
   pointer, reference, l-value, r-value
-image: /assets/post-images/03-05.png
+image: /assets/post-img/cpp/cpp-03-05.png
 sitemap: false
 hide_last_modified: true
 ---
@@ -36,7 +36,7 @@ int main()
 }
 ```
 
-![](../../assets/post-images/03-01.png)
+![](../../assets/post-img/cpp/cpp-03-01.png)
 
 ---
 ### pass by ptr & pass by reference
@@ -76,7 +76,7 @@ int main()
 
 - pointer와 당연히 동일, 어셈블리가 같기 때문
 
-![](../../assets/post-images/03-02.png)
+![](../../assets/post-img/cpp/cpp-03-02.png)
 
 ---
 ### 뭐가 제일 좋은가?
@@ -145,7 +145,7 @@ int main()
 ---
 ### _storeByValue_
 
-![](../../assets/post-images/03-04.png)
+![](../../assets/post-img/cpp/cpp-03-04.png)
 
 1. _std::string a = "abc";_
 2. stack에 _a_, heap에 _"abc"_ 할당
@@ -159,7 +159,7 @@ int main()
 ---
 ### _storeByLRef_
 
-![](../../assets/post-images/03-03.png)
+![](../../assets/post-img/cpp/cpp-03-03.png)
 
 1. _storeByLRef_ 의 stackframe이 들어오고,
 2. 이번에는 _s_ 는 _"abc"_ 값이 heap에 복사되는게 아니고,
@@ -171,7 +171,7 @@ int main()
 ---
 ### _storeByRef_
 
-![](../../assets/post-images/03-05.png)
+![](../../assets/post-img/cpp/cpp-03-05.png)
 
 1. _storeByRef("abc");_ 는 저장을 해두는게 아니라 임시로 존재하기 때문에 heap에는 "abc"가 존재하지만, stack에는 임시로 설정되어 있음.
 2. 함수가 call이 오고 _storeByRef_의 stackframe이 쌓임.
@@ -212,13 +212,13 @@ int main()
 - _std::move()_ 로 인해 __resource ownership__ 을 다른 애한테 뺐겼기 떄문이다.
 
 ---
-![](../../assets/post-images/03-06.png)
+![](../../assets/post-img/cpp/cpp-03-06.png)
 
 - 위와 같은 _a_ 는 __resource ownership__ 을 _b_ 한테 넘겨준다.
 - 결과는 _a_ 는 나오지 않고, _b_ 만 _"abc"_ 가 출력된다.
 
 ---
-![](../../assets/post-images/03-07.png)
+![](../../assets/post-img/cpp/cpp-03-07.png)
 
 - __[주의]: 하지만 argument 앞에 _const_ 를 붙여주면 안에서의 _std::move()_ copy로 작동한다.__
 
@@ -226,15 +226,15 @@ int main()
 ### Copy Ellision Rule (복사 생략)
 인수로 R-value가 임시적으로 잠깐 자리를 차지했다가 사라지는 경우는 어떻게 될까?
 
-![](../../assets/post-images/03-08.png)
+![](../../assets/post-img/cpp/cpp-03-08.png)
 
 - __이럴 경우는 어떻게 되는지 다음과 같다.__
 
 ---
-![](../../assets/post-images/03-09.png)
+![](../../assets/post-img/cpp/cpp-03-09.png)
 
 ---
-![](../../assets/post-images/03-10.png)
+![](../../assets/post-img/cpp/cpp-03-10.png)
 
 - copy ellision rule에 따라서, R-value가 인자로 들어갈 때, _name_ 에서 __1 copy__ 가 일어나야하는데,
 	- computer가 R-value임을 알고 copy ellision이 일어나 _name_ 이 _"nabi"_ 를 가리킨다.
@@ -242,7 +242,7 @@ int main()
 ---
 ## 4. RVO (Return Value Optimization)
 
-![](../../assets/post-images/03-11.png)
+![](../../assets/post-img/cpp/cpp-03-11.png)
 
 - __결론: 0 move, o copy가 발생__
 - computer가 이미 function의 return address를 알고 있어서,

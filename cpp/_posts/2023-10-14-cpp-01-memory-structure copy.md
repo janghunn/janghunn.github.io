@@ -3,7 +3,7 @@ layout: post
 title: 01 Memory Structure
 description: >
   stack, heap, static
-image: /assets/post-images/01-01.png
+image: /assets/post-img/cpp/cpp-01-01.png
 sitemap: false
 hide_last_modified: true
 ---
@@ -28,7 +28,7 @@ int main()
 
 
 ---
-![](../../assets/post-images/01-01.png)
+![](../../assets/post-img/cpp/cpp-01-01.png)
 
 
 - (top 기준) stack은 top에서 부터 address가 증가하는 방향으로 진행된다. 
@@ -165,7 +165,7 @@ int main()
   - function call에 의해서 결정, 즉 compiler가 결정한다.
   - stack frame = function + additional info. (argument, return address)
 
-![](../../assets/post-images/01-02.png)
+![](../../assets/post-img/cpp/cpp-01-02.png)
 
 ---
 ```cpp
@@ -404,7 +404,7 @@ int main()
   - 또한, Stack은 순차적으로 Memory가 Allocation 되지만, Heap의 경우 그렇지 않고, Memory Allocator 마음대로 정해진다.
   - Compiler에 따라 stack에 순서, heap memory의 위치 또한 다르다.
 
-![](../../assets/post-images/01-03.png)
+![](../../assets/post-img/cpp/cpp-01-03.png)
 
 ---
 ### Memory Leak Checking Tool

@@ -3,7 +3,7 @@ layout: post
 title: 06 Smart Pointer
 description: >
   unique pointer, shared pointer, weak pointer
-image: /assets/post-images/06-03.png
+image: /assets/post-img/cpp/cpp-06-03.png
 sitemap: false
 hide_last_modified: true
 ---
@@ -64,7 +64,7 @@ int main()
 	return 0;
 }
 ```
-![](../../assets/post-images/06-02.png)
+![](../../assets/post-img/cpp/cpp-06-02.png)
 
 - __분석__
 	- 코드와 결과를 보면 __smart pointer의 memory 해제 시점은 해당 scope의 stack frame이 제거된 후 사라지는 것을 알 수 있다.__
@@ -83,7 +83,7 @@ int main()
 
 - __예시__
 
-![](../../assets/post-images/06-03.png)
+![](../../assets/post-img/cpp/cpp-06-03.png)
 
 ```cpp
 std::unique_ptr<Cat> catPtr1 = std::make_unique<Cat>();
@@ -96,7 +96,7 @@ std::unique_ptr<Cat> catPtr2 = std::move(carPtr1);
 --- 
 ### 실제로 언제 사용할까?
 
-![](../../assets/post-images/06-04.png)
+![](../../assets/post-img/cpp/cpp-06-04.png)
 
 - [class](./2023-10-24-cpp-04-oop%20copy.md) 챕터에서 배운 것이 member variable에 pointer가 있으면 memory managing을 따로 사용자가 해줘야하기 때문에 constructor, destructor를 rule of three 때문에 만들어야 한다.
 	- __이런 문제를 smart pointer를 통해서 해결할 수 있다.__
@@ -116,7 +116,7 @@ int main()
 }
 ```
 
-![](../../assets/post-images/06-06.png)
+![](../../assets/post-img/cpp/cpp-06-06.png)
 
 - __특징__
 	- shared ownership을 제공한다.
@@ -151,9 +151,9 @@ int main()
 	return 0;
 }
 ```
-![](../../assets/post-images/06-08.png)
+![](../../assets/post-img/cpp/cpp-06-08.png)
 
-![](../../assets/post-images/06-09.png)
+![](../../assets/post-img/cpp/cpp-06-09.png)
 
 - __분석__
 	- 코드와 memory leak 결과, 출력 결과를 보면,
@@ -240,7 +240,7 @@ int main()
 ## 5. Example
 
 - __문제가 있는 code__
-![](../../assets/post-images/06-12.png)
+![](../../assets/post-img/cpp/cpp-06-12.png)
 > 잘 안보이는데 make_unique<int>(0) 이다.
 
 - __분석__

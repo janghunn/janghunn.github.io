@@ -3,7 +3,7 @@ layout: post
 title: 05 Inheritance
 description: >
   base class, derive class, virtual function 
-image: /assets/post-images/05-10.png
+image: /assets/post-img/cpp/cpp-05-10.png
 sitemap: false
 hide_last_modified: true
 ---
@@ -61,7 +61,7 @@ int main()
 ```
 
 - __result__
-![](../../assets/post-images/05-02.png)
+![](../../assets/post-img/cpp/cpp-05-02.png)
 
 - __분석__
 	- 결과를 보면 _Cat_ Destructor가 실행되지 않았다.
@@ -203,8 +203,8 @@ int main()
 
 - __분석__
 
-![](../../assets/post-images/05-05.png)
-![](../../assets/post-images/05-06.png)
+![](../../assets/post-img/cpp/cpp-05-05.png)
+![](../../assets/post-img/cpp/cpp-05-06.png)
 
 - _Animal_ 로 만드냐, _Cat_ 으로 만드냐에 따라 해당 pointer는 _Animal_ Virtual Table을 가리키거나, _Cat_ Virtual Table을 가리켜 _speak()_ 함수가 다르게 나올 수 있는 것이다.
 
@@ -289,7 +289,7 @@ public:
 
 ### Virtual Table의 주인
 
-![](../../assets/post-images/05-08.png)
+![](../../assets/post-img/cpp/cpp-05-08.png)
 
 - Virtual Table을 가리키는 pointer는 base class에 할당되어있다고 생각하는게 편하다.
 - 즉, derive class는 virtual table pointer와 base class의 private data를 붙이고, derive class의 다른 member function/variable이 합쳐지는 식이다. (그림참고)
@@ -297,7 +297,7 @@ public:
 ---
 ### Diamond Inheritance
 
-![](../../assets/post-images/05-09.png)
+![](../../assets/post-img/cpp/cpp-05-09.png)
 
 - 구조
 	- Animal
@@ -318,14 +318,14 @@ public:
 
 ### 차이점
 
-![](../../assets/post-images/05-10.png)
+![](../../assets/post-img/cpp/cpp-05-10.png)
 
 - virtual table이 derive class에서도 생긴다.
 
 ---
 ### Diamond Inheritance 상황
 
-![](../../assets/post-images/05-11.png)
+![](../../assets/post-img/cpp/cpp-05-11.png)
 
 - 다이아몬드 상속 구조에서는 virtual 구조를 사용해야만 한다.
 - Animal Data가 두 개가 생기므로 어떤 것이 맞는지 불분명한다.
@@ -387,7 +387,7 @@ int main()
 
 - __그림__
 
-![](../../assets/post-images/05-13.png)
+![](../../assets/post-img/cpp/cpp-05-13.png)
 
 > 아마 그림을 보면 확실히 이해가 될 것이다.
 

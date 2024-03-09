@@ -3,7 +3,7 @@ layout: post
 title: 11 Set Map Hash
 description: >
   set, map, unordered, hash
-image: /assets/post-images/11-01.png
+image: /assets/post-img/cpp/cpp-11-01.png
 sitemap: false
 hide_last_modified: true
 ---
@@ -78,7 +78,7 @@ int main()
 ---
 ### Hash Function
 
-![](../../assets/post-images/11-01.png)
+![](../../assets/post-img/cpp/cpp-11-01.png)
 
 - 다른 input을 넣으면 아주 작은 확률을 제외하고 나서는 output이 달라야한다.
 
@@ -108,7 +108,7 @@ int main()
 }
 ```
 
-![](../../assets/post-images/11-02.png)
+![](../../assets/post-img/cpp/cpp-11-02.png)
 
 - __정리__
 	- string to Hash value 로 바꾸면, 각 string마다 다른 hash value가 나오지만, 이를 인덱스로 바로 사용하기에는 hash value 값이 너무 크다.
@@ -144,7 +144,7 @@ int main()
 	- Hash, O(1), not sorted, rehashing O(n)
 	- define 'hash', == 
 
-![](../../assets/post-images/11-03.png)
+![](../../assets/post-img/cpp/cpp-11-03.png)
 
 ---
 ## 5. Tip

@@ -3,7 +3,7 @@ layout: post
 title: 12 Types
 description: >
   floating types, pair, tuple ...
-image: /assets/post-images/12-02.png
+image: /assets/post-img/cpp/cpp-12-02.png
 sitemap: false
 hide_last_modified: true
 ---
@@ -14,15 +14,15 @@ hide_last_modified: true
 ## 1. floating number
 
 ### Integer
-![](../../assets/post-images/12-01.png)
+![](../../assets/post-img/cpp/cpp-12-01.png)
 
 ---
 ### Float, Double
-![](../../assets/post-images/12-02.png)
+![](../../assets/post-img/cpp/cpp-12-02.png)
 
 ---
-![](../../assets/post-images/12-03.png)
-![](../../assets/post-images/12-04.png)
+![](../../assets/post-img/cpp/cpp-12-03.png)
+![](../../assets/post-img/cpp/cpp-12-04.png)
 
 - **INF**: exponent가 전부 1이고 mantissa가 **전부 0**
 - **NAN**: exponent가 전부 1이고 mantissa가 **0이 아닌 어떤 정보**
@@ -136,7 +136,7 @@ int main()
 	- optional은 실제 variable의 size 보다 더 크게 생성된다.
 	- data를 저장하는 곳과 valid인지 아닌지를 판단하는 memory가 따로 구성된다.
 
-![](../../assets/post-images/12-05.png)
+![](../../assets/post-img/cpp/cpp-12-05.png)
 
 - code
 
@@ -315,7 +315,7 @@ int main()
 }
 ```
 
-![](../../assets/post-images/12-06.png)
+![](../../assets/post-img/cpp/cpp-12-06.png)
 
 - 즉, _union_ 은 두 개의 type이 되어있더라도, memory map 상에서 공유하고 있으므로 경우에 맞게 사용되는 것이다.
 - 한번에 하나의 type만 사용된다.
@@ -359,7 +359,7 @@ _optional_ (exception 없이 handling 하는 방법)이 아니라, pair로 <var,
 ---
 ### Debugging
 
-![](../../assets/post-images/12-07.png)
+![](../../assets/post-img/cpp/cpp-12-07.png)
 
 _variant_ 로 선언 된 메모리가 _union_ 에 비해 조금 더 큰 걸 보아 뭔가 다른 정보가 추가된 것을 알 수 있다.
 
@@ -414,7 +414,7 @@ sv = std::vector{1,2,3};
 - 즉, 이렇기 때문에 _memcpy_ 를 통해서 _pointer casting_ 을 해야함.
 - C++20 부터는 std::bit_cast를 사용
 
-![](../../assets/post-images/12-08.png)
+![](../../assets/post-img/cpp/cpp-12-08.png)
 
 
 *[HTML]: HyperText Markup Language

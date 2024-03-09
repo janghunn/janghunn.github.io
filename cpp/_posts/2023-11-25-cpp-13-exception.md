@@ -3,7 +3,7 @@ layout: post
 title: 13 Exception
 description: >
   exception, stack unwinding, safety guarantees
-image: /assets/post-images/13-01.png
+image: /assets/post-img/cpp/cpp-13-01.png
 sitemap: false
 hide_last_modified: true
 ---
@@ -12,7 +12,7 @@ hide_last_modified: true
 > exception, stack unwinding, safety guarantees
 
 ## 1. exception
-![](../../assets/post-images/13-01.png)
+![](../../assets/post-img/cpp/cpp-13-01.png)
 
 ### Rule
 - throw로 던질 때는 **R-Value**

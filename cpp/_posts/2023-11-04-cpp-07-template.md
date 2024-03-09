@@ -3,7 +3,7 @@ layout: post
 title: 07 Template
 description: >
   template deduction, template instantiation, template concept
-image: /assets/post-images/07-06.png
+image: /assets/post-img/cpp/cpp-07-06.png
 sitemap: false
 hide_last_modified: true
 ---
@@ -133,7 +133,7 @@ int main()
 ---
 ### 실제 Compiler에 의한 Assembly
 
-![](../../assets/post-images/07-06.png)
+![](../../assets/post-img/cpp/cpp-07-06.png)
 
 ---
 ### 복잡하지만 _template_ 을 사용해서 L-value, R-value에 따라 소유권이 바뀔 수도 있다는 것을 기억하자!
@@ -169,7 +169,7 @@ int main()
 ---
 ### 해결책
 
-![](../../assets/post-images/07-08.png)
+![](../../assets/post-img/cpp/cpp-07-08.png)
 
 - __분석__
 	- L-value로 들어오면, L-value로 작동하고,
@@ -245,26 +245,26 @@ int main()
 ### Template Build (instantiation)
 
 - (1)
-![](../../assets/post-images/07-09.png)
+![](../../assets/post-img/cpp/cpp-07-09.png)
 
 _template_ 정의만 하고 사용을 안하니 compiler가 따로 인식하지 않는다.
 
 ---
 - (2)
-![](../../assets/post-images/07-10.png)
+![](../../assets/post-img/cpp/cpp-07-10.png)
 
 main에서 사용하니 compile 되었다.
 
 ---
 - (3)
-![](../../assets/post-images/07-11.png)
+![](../../assets/post-img/cpp/cpp-07-11.png)
 
 _int_, _float_ 두 개를 사용하니 함수가 두 개가 compile 되어 binary로 들어간다.
 > compile 될 때는 결국 다른 함수로 만들어지는거였다!
 
 ---
 - (4)
-![](../../assets/post-images/07-12.png)
+![](../../assets/post-img/cpp/cpp-07-12.png)
 
 위와 같이 header에 declaration 그리고 cpp에 implementation을 적고 main에서 실행을 하면, undefined라고 뜬다.
 
@@ -282,7 +282,7 @@ template int foo<int>(int); //explicit template instantiation
 template double foo<double>(double);
 ```
 
-![](../../assets/post-images/07-14.png)
+![](../../assets/post-img/cpp/cpp-07-14.png)
 
 __그래서, _template_ 을 사용할 때는 모든 구현까지도 header에 넣는게 일반적이다. 또는 cpp에다가 explicit하게 선언해도 된다.__
 > 뭔가 그랬던 것 같다.
