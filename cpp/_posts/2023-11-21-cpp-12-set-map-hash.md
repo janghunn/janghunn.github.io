@@ -3,7 +3,7 @@ layout: post
 title: 12 Types
 description: >
   floating types, pair, tuple ...
-image: /assets/post-images/12-01.png
+image: /assets/post-images/12-02.png
 sitemap: false
 hide_last_modified: true
 ---
