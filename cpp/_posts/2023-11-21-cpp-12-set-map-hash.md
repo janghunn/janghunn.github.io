@@ -9,6 +9,7 @@ hide_last_modified: true
 ---
 
 # 12 Types
+> floating number, pair, tuple ...
 
 ## 1. floating number
 
