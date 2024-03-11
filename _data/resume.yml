@@ -9,70 +9,70 @@ basics:
   #phone: "(912) 555-4321"
   #website: "https://piedpiper.com"
   summary: |
-    Hi, I’m Janghun Kim and Master Student from University of Sungkyunkwan.
-    I majored Computer Graphics with a focus on real-time rendering techniques.
-    Currently, I consider myself a novice in programming and acknowledge that I have room for improvement
-    So, I am eager to learn quickly and excel in my studies :)
+    저는 성균관대학교 컴퓨터그래픽스 연구실에서 실시간 렌더링 연구를 하였습니다. 
+    연구실적으로는 최우수국제학술대회 ACM SIGGRAPH 주저자 1편, 국내학술대회 주저자 1편 게재하였습니다.
+    프로젝트는 '한국전자통신연구원(ETRI)'와 '삼성전자DX, VD사업부'와 공동 과제를 진행하였습니다.
+    인턴으로는 '펄어비스', 게임엔진그래픽스팀에서 테크인턴십을 수료하였습니다.
   # location:
   #   address: "2712 Broadway St"
   #   postalCode: "CA 94115"
   #   city: "San Francisco"
   #   countryCode: "US"
   #   region: "California"
-  profiles:
-    - network: "Github"
-      username: "janghunn"
-      url: "https://github.com/janghunn"
-    - network: "LinkedIn"
-      username: "janghunn"
-      url: "https://www.linkedin.com/in/janghunn/"
+  # profiles:
+  #   - network: "Github"
+  #     username: "janghunn"
+  #     url: "https://github.com/janghunn"
+  #   - network: "LinkedIn"
+  #     username: "janghunn"
+  #     url: "https://www.linkedin.com/in/janghunn/"
 work:
-  - company: "Univ. of Sungkyunkwan, CG Lab."
-    position: "Master Student"
+  - company: "성균관대학교 컴퓨터그래픽스연구실"
+    position: "석사과정생"
     website: "http://cg.skku.edu/"
     startDate: "2021-01-01"
     endDate: ""
     summary: |
-      I majored in computer graphics and conducted research on Real-time rendering in University of Sungkyunkwan, CG Lab.
-
-      ACM SIGGRAPH, an International academic conference, approved one journal paper by the first author,
-      and KSC, a domestic academic conference, published one short paper by the first author
+      성균관대학교, 컴퓨터그래픽스연구실에서 실시간 렌더링과 이미지 프로세싱과 관련된 연구를 진행하였습니다.
+      ACM SIGGRAPH, 최우수국제학술대회 주저자 1편과 KSC 국내학술대회 주저자 1편을 게재/발표하였습니다.
     highlights:
       - "(Journal Track) Potentially Visible Hidden-Volume Rendering for Multi-View Warping,
-        Janghun Kim and Sungkil Lee, ACM Trans. Graphics (Proc. SIGGRAPH’23)"
-      - "Keyword: Visibility, Geometric-based Inpainting Method, Post-Processing"
-  - company: "SKKU, CG Lab. with ETRI (한국전자통신연구원)"
-    position: "Student Researcher"
+        Janghun Kim and Sungkil Lee"
+      - "ACM Transactions on Graphics (Proc. SIGGRAPH’23)"
+  - company: "한국전자통신연구원(ETRI), 성균관대학교 컴퓨터그래픽스연구실"
+    position: "학생연구원"
     website: "http://cg.skku.edu/fund/"
     startDate: "2022-06-01"
     endDate: "2022-11-30"
     summary: |
-      Using multiple-plane RGB images and additional Depth maps,
-      we worked on a project to synthesize and improve novel-views.
+      본 프로젝트는 TMIV (Test Model for MPEG Immersive Video)의 렌더링 품질 개선을 목표로 진행하였다.
+      새로운 시점에서 이미지 합성 시, 깊이 정보의 정확성은 결과물의 큰 영향을 미치는데, 
+      이를 위해 기존 인코더 포맷을 수정하여 높은 깊이 정확도를 추가하였다. 
+      또한, 새로운 시점 이미지 합성 시 발생하는 Seam과 Hole을 해결하기 위해 이미지 프로세싱 중 Dilation 방식을 사용하여 품질을 개선하였다.
     highlights:
-      - "A project to process novel-view images with known-view multiple-plane RGBZ images."
-      - "My role: Modifying the Encoding Format(add depth info.), Novel-View Synthesis using Forward Warping"
-  - company: "SKKU, CG Lab. with Samsung Electronics"
-    position: "Student Researcher"
+      - "역할: TMIV 인코더 포맷 수정 및 이미지 프로세싱"
+  - company: "삼성전자DX VD사업부, 성균관대학교 컴퓨터그래픽스연구실"
+    position: "학생연구원"
     website: "https://www.samsung.com/sec/aboutsamsung/home/"
     startDate: "2023-04-01"
     endDate: "2023-08-30"
     summary: |
-      [SECURITY]
+      [보안상 자세히 기술 불가] 본 프로젝트에서는 딥러닝/그래픽스 파이프라인을 연결하는 C++ 프로그래밍을 진행하였다.
+      pytorch 모델을 ONNX 모델로 변환하여 C++에서 추론을 하는 작업을 하였으며, OpenGL의 텍스쳐 메모리를 CUDA에 올려 호환/최적화를 하였다.
+      또한 셰이더 프로그래밍을 하여 프로젝트에 필요한 그래픽스 알고리즘을 고안 후 적용시켰다.
     highlights:
-      - "[SECURITY]"
-      - "My role: C++ programming, Shader Programming"      
-  - company: "PearlAbyss - Game Engine Graphics Team"
-    position: "Intern"
+      - "역할: C++ 프로그래밍, 셰이더 프로그래밍"      
+  - company: "펄어비스 (PearlAbyss) - 게임엔진그래픽스팀"
+    position: "인턴"
     website: https://www.pearlabyss.com
     startDate: "2023-10-10"
-    endDate: "2023-08-30"
+    endDate: "2023-12-01"
     summary: |
-      I worked on a real-time depth-of-field implementation project using post-processing techniques.
-      Over the course of 8 weeks, I received feedback from senior rendering engineers, and completed a high-quality depth-of-field rendering that runs at approximately 1.1ms on an RTX 3060 environment.
+      게임엔진그래픽스팀에서 실시간 렌더링에 대한 연구 및 개발을 진행하였다. 
+      특히, Post-Processing 기법 중 DOF (Depth-of-Field) 기술을 주제로 하여, 개발을 진행하였다.
     highlights:
-      - "Reference Depth-of-Field Method: https://www.iryoku.com/next-generation-post-processing-in-call-of-duty-advanced-warfare/"
-      - "keyword: Scatter-As-You-Gather, Guided Filtering, Background Reconstruction, Karis average, Optimization by CoC"          
+      - "참고한 Depth-of-Field 기법: https://www.iryoku.com/next-generation-post-processing-in-call-of-duty-advanced-warfare/"
+      - "적용한 기술: Scatter-As-You-Gather, Guided Filtering, Background Reconstruction, Karis average, Optimization by CoC"          
 # volunteer:
 #   - organization: "CoderDojo"
 #     position: "Teacher"
@@ -82,22 +82,22 @@ work:
 #     summary: "Global movement of free coding clubs for young people."
 #     highlights:
 #       - "Awarded 'Teacher of the Month'"
-education:
-  - institution: "University of Sungkyunkwan"
-    area: "Computer Science and Engineering"
-    studyType: "Bachelor"
-    startDate: "2017-03-01"
-    endDate: "2022-08-01"
-    gpa: "3.96"
-    # courses:
-    #   - "DB1101 - Basic SQL"
-    #   - "CS2011 - Java Introduction"
-  - institution: "University of Sungkyunkwan"
-    area: "Computer Science and Engineering"
-    studyType: "Master"
-    startDate: "2022-09-01"
-    endDate: ""
-    gpa: "4.0"    
+# education:
+#   - institution: "University of Sungkyunkwan"
+#     area: "Computer Science and Engineering"
+#     studyType: "Bachelor"
+#     startDate: "2017-03-01"
+#     endDate: "2022-08-01"
+#     gpa: "3.96"
+#     # courses:
+#     #   - "DB1101 - Basic SQL"
+#     #   - "CS2011 - Java Introduction"
+#   - institution: "University of Sungkyunkwan"
+#     area: "Computer Science and Engineering"
+#     studyType: "Master"
+#     startDate: "2022-09-01"
+#     endDate: ""
+#     gpa: "4.0"    
 # awards:
 #   - title: "Digital Compression Pioneer Award"
 #     date: "2014-11-01"
@@ -121,28 +121,34 @@ publications:
 
   - name: "Potentially Visible Hidden-Volume Rendering for Multi-View Warping"
     publisher: "ACM"
-    releaseDate: "2023-08-01"
+    releaseDate: "2023-07-26"
     website: "http://cg.skku.edu/pub/2023-kim-siggraph-pvhv"
-    summary: "This paper presents the model and rendering algorithm of Potentially Visible Hidden Volumes (PVHVs) for multi-view image warping. PVHVs are 3D volumes that are occluded at a known source view, but potentially visible at novel views. Given a bound of novel views, we define PVHVs using the edges of foreground fragments from the known view and the bound of novel views. PVHVs can be used to batch-test the visibilities of source fragments without iterating individual novel views in multi-fragment rendering, and thereby, cull redundant fragments prior to warping. We realize the model of PVHVs in Depth Peeling (DP). Our Effective Depth Peeling (EDP) can reduce the number of completely hidden fragments, capture important fragments early, and reduce warping cost. We demonstrate the benefit of our PVHVs and EDP in terms of memory, quality, and performance in multi-view warping."
+    summary: " 본 논문은 다중 시점 이미지 와핑을 위한 잠재적으로 보이는 숨겨진 볼륨(PVHVs) 모델 및 렌더링 알고리즘을 제시한다. 
+    PVHVs는 입력 시점에서 가려진 3D 볼륨이지만, 새로운 시점에서 잠재적으로 보인다. 
+    새로운 시점의 범위를 고려하고 입력된 프래그먼트의 가장자리와 새로운 시점의 범위를 사용하여 정의한다. 
+    PVHVs를 사용하면 다중 프래그먼트 렌더링에서 개별 새로운 시점을 반복하지 않고 소스 단편의 가시성을 일괄 테스트할 수 있게 알고리즘을 구상할 것이며, 
+    이로써 와핑 전에 중복된 단편을 제거하는 것을 목표로 한다. 
+    또한, 정의한 PVHVs 모델을 Depth Peeling(DP)에서 실현하여 렌더링 결과를 보인다. 
+    이를 Effective Depth Peeling (EDP)이라 정의할 것이고 이는 PVHV을 기반하여 메모리, 품질 및 다중 뷰 와핑의 성능 측면에서 개선되는 것을 증명하였다."
     highlights:
       - "ACM Trans. Graphics (Proc. SIGGRAPH), 42(4), 86:1–11, 2023."
       - "(Submitted) Jan. 25, (Accepted) Apr. 28, (Published) Jul. 26, 2023"
       - "IF=6.2, PCTL=90.3. ISSN: 0730-0301, ACM, USA"
-skills:
-  - name: "C++ Application Development"
-    level: "junior"
-    keywords:
-      - "C++"
-  - name: "Shader Programming"
-    level: "junior"
-    keywords:
-      - "OpenGL"
-      - "GLSL"      
-  - name: "Sociability"
-    level: "master"
-    keywords:
-      - "Leadership"
-      - "Affable"            
+# skills:
+#   - name: "C++ Application Development"
+#     level: "junior"
+#     keywords:
+#       - "C++"
+#   - name: "Shader Programming"
+#     level: "junior"
+#     keywords:
+#       - "OpenGL"
+#       - "GLSL"      
+#   - name: "Sociability"
+#     level: "master"
+#     keywords:
+#       - "Leadership"
+#       - "Affable"            
   # - name: "Compression"
   #   level: "Master"
   #   keywords:
