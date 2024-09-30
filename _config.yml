@@ -20,7 +20,7 @@ baseurl:               ''
 lang:                  en, ko, zh
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 JangHun
+title:                 말하는 감자.
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
@@ -52,10 +52,10 @@ menu:
     url:               /blog/
   - title:             Projects
     url:               /projects/
-  - title:             About
-    url:               /about/  
-  - title:             Resume
-    url:               /resume/
+  #- title:             About
+  #  url:               /about/  
+  #- title:             Resume
+  #  url:               /resume/
   #- title:             Documentation
   #  url:               /docs/
 

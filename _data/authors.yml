@@ -3,7 +3,7 @@
 # Change `author1` to your shortname.
 author:
   name:              Janghun Kim
-  email:             teekey.kim@gmail.com
+  email:             janghun0315@gmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
@@ -23,8 +23,8 @@ author:
   # Rearrange to change the order in which they appear
   social:
     # twitter:         <username>
-    github:          janghunn
-    email:           teekey.kim@gmail.com
+    # github:          janghunn
+    email:           janghun0315@gmail.com
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
@@ -35,7 +35,7 @@ author:
     # spotify:         <user>/<number>
     # soundcloud:      <username>
     # lastfm:          <username>
-    instagram:       jh_o315
+    # instagram:       jh_o315
     # flickr:          <string@string>
     # 500px:           <username>
     # dribbble:        <username>
@@ -53,7 +53,7 @@ author:
     # npm:             <username>
     # hackernews:      <username>
     # trello:          <firstnamelastname>
-    linkedin:        janghunn #<firstname-lastname-string>
+    # linkedin:        janghunn #<firstname-lastname-string>
     # xing:            <firstname_lastname_counter>
     # blogger:         <number>
     # delicious:       <username>
