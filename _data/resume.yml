@@ -1,0 +1,170 @@
+# If you have a `resume.json` file, copy it into `_data` and delete this file.
+# If you don't have a JSON Resume you can just edit this YAML file instead.
+# See also: <https://jsonresume.org/>.
+basics:
+  name: "김장훈"
+  label: "Janghun Kim"
+  picture: /assets/img/logo.jpg
+  email: "janghun0315@gmail.com"
+  #phone: "(912) 555-4321"
+  #website: "https://piedpiper.com"
+  summary: |
+    저는 성균관대학교 컴퓨터그래픽스 연구실에서 실시간 렌더링 연구를 하였습니다. 
+    연구실적으로는 최우수국제학술대회 ACM SIGGRAPH 주저자 1편, 국내학술대회 주저자 1편 게재하였습니다.
+    프로젝트는 '한국전자통신연구원(ETRI)'와 '삼성전자DX, VD사업부'와 공동 과제를 진행하였습니다.
+    인턴으로는 '펄어비스', 게임엔진그래픽스팀에서 테크인턴십을 수료하였습니다.
+  # location:
+  #   address: "2712 Broadway St"
+  #   postalCode: "CA 94115"
+  #   city: "San Francisco"
+  #   countryCode: "US"
+  #   region: "California"
+  # profiles:
+  #   - network: "Github"
+  #     username: "janghunn"
+  #     url: "https://github.com/janghunn"
+  #   - network: "LinkedIn"
+  #     username: "janghunn"
+  #     url: "https://www.linkedin.com/in/janghunn/"
+work:
+  - company: "성균관대학교 컴퓨터그래픽스연구실"
+    position: "석사과정생"
+    website: "http://cg.skku.edu/"
+    startDate: "2021-01-01"
+    endDate: ""
+    summary: |
+      성균관대학교, 컴퓨터그래픽스연구실에서 실시간 렌더링과 이미지 프로세싱과 관련된 연구를 진행하였습니다.
+      ACM SIGGRAPH, 최우수국제학술대회 주저자 1편과 KSC 국내학술대회 주저자 1편을 게재/발표하였습니다.
+    highlights:
+      - "(Journal Track) Potentially Visible Hidden-Volume Rendering for Multi-View Warping,
+        Janghun Kim and Sungkil Lee"
+      - "ACM Transactions on Graphics (Proc. SIGGRAPH’23)"
+  - company: "한국전자통신연구원(ETRI), 성균관대학교 컴퓨터그래픽스연구실"
+    position: "학생연구원"
+    website: "http://cg.skku.edu/fund/"
+    startDate: "2022-06-01"
+    endDate: "2022-11-30"
+    summary: |
+      본 프로젝트는 TMIV (Test Model for MPEG Immersive Video)의 렌더링 품질 개선을 목표로 진행하였다.
+      새로운 시점에서 이미지 합성 시, 깊이 정보의 정확성은 결과물의 큰 영향을 미치는데, 
+      이를 위해 기존 인코더 포맷을 수정하여 높은 깊이 정확도를 추가하였다. 
+      또한, 새로운 시점 이미지 합성 시 발생하는 Seam과 Hole을 해결하기 위해 이미지 프로세싱 중 Dilation 방식을 사용하여 품질을 개선하였다.
+    highlights:
+      - "역할: TMIV 인코더 포맷 수정 및 이미지 프로세싱"
+  - company: "삼성전자DX VD사업부, 성균관대학교 컴퓨터그래픽스연구실"
+    position: "학생연구원"
+    website: "https://www.samsung.com/sec/aboutsamsung/home/"
+    startDate: "2023-04-01"
+    endDate: "2023-08-30"
+    summary: |
+      [보안상 자세히 기술 불가] 본 프로젝트에서는 딥러닝/그래픽스 파이프라인을 연결하는 C++ 프로그래밍을 진행하였다.
+      pytorch 모델을 ONNX 모델로 변환하여 C++에서 추론을 하는 작업을 하였으며, OpenGL의 텍스쳐 메모리를 CUDA에 올려 호환/최적화를 하였다.
+      또한 셰이더 프로그래밍을 하여 프로젝트에 필요한 그래픽스 알고리즘을 고안 후 적용시켰다.
+    highlights:
+      - "역할: C++ 프로그래밍, 셰이더 프로그래밍"      
+  - company: "펄어비스 (PearlAbyss) - 게임엔진그래픽스팀"
+    position: "인턴"
+    website: https://www.pearlabyss.com
+    startDate: "2023-10-10"
+    endDate: "2023-12-01"
+    summary: |
+      게임엔진그래픽스팀에서 실시간 렌더링에 대한 연구 및 개발을 진행하였다. 
+      특히, Post-Processing 기법 중 DOF (Depth-of-Field) 기술을 주제로 하여, 개발을 진행하였다.
+    highlights:
+      - "참고한 Depth-of-Field 기법: https://www.iryoku.com/next-generation-post-processing-in-call-of-duty-advanced-warfare/"
+      - "적용한 기술: Scatter-As-You-Gather, Guided Filtering, Background Reconstruction, Karis average, Optimization by CoC"          
+# volunteer:
+#   - organization: "CoderDojo"
+#     position: "Teacher"
+#     website: "https://coderdojo.com/"
+#     startDate: "2012-01-01"
+#     endDate: "2013-01-01"
+#     summary: "Global movement of free coding clubs for young people."
+#     highlights:
+#       - "Awarded 'Teacher of the Month'"
+# education:
+#   - institution: "University of Sungkyunkwan"
+#     area: "Computer Science and Engineering"
+#     studyType: "Bachelor"
+#     startDate: "2017-03-01"
+#     endDate: "2022-08-01"
+#     gpa: "3.96"
+#     # courses:
+#     #   - "DB1101 - Basic SQL"
+#     #   - "CS2011 - Java Introduction"
+#   - institution: "University of Sungkyunkwan"
+#     area: "Computer Science and Engineering"
+#     studyType: "Master"
+#     startDate: "2022-09-01"
+#     endDate: ""
+#     gpa: "4.0"    
+# awards:
+#   - title: "Digital Compression Pioneer Award"
+#     date: "2014-11-01"
+#     awarder: "Techcrunch"
+#     summary: "There is no spoon."
+publications:
+  - name: "모션 조작 요소 기반의 볼륨 변형 애니메이션 저작 및 생성 기법"
+    publisher: "KSC"
+    releaseDate: "2021-12-01"
+    website: "https://cg.skku.edu/pub/korean/papers/2021-kim-ksc-cvox-cam.pdf"
+    summary: "볼륨의 직접 변형 기법과 달리 조작점 기반의 간접 변형 기법은 최소한의 사용자 조작 기반으로 볼륨 전체에 적용되는 역동적인 효과를 생성할 수 있다.
+    본 논문은 모션 조작 요소기반으로 볼륨을 변형하는 기법을 제안한다.
+    제안하는 기법은 조작점 기반으로 저수준의 모션 조작 요소를 정의하고,
+    고수준에서 그 요소들을 시공간적으로 조합하여 볼륨 변형을 시도한다.
+    고수준의 모션 조합은 사용자의 의도와 일치하게 수동으로 조합할 수 있고,
+    또한 랜덤 조합을 통해 새롭게 변형된 애니메이션을 생성할 수도 있다.
+    수동 조합은 형체가 존재하는 사물이나 생물의 직관적 변형에 적합하고,
+    랜덤 조합은 불규칙한 형태의 객체에서 새로운 애니메이션을 생성하는데 적합하다."
+    highlights:
+      - "한국정보과학회 2021 한국소프트웨어종합학술대회 논문집, 1,607 - 1,609"
+
+  - name: "Potentially Visible Hidden-Volume Rendering for Multi-View Warping"
+    publisher: "ACM"
+    releaseDate: "2023-07-26"
+    website: "http://cg.skku.edu/pub/2023-kim-siggraph-pvhv"
+    summary: " 본 논문은 다중 시점 이미지 와핑을 위한 잠재적으로 보이는 숨겨진 볼륨(PVHVs) 모델 및 렌더링 알고리즘을 제시한다. 
+    PVHVs는 입력 시점에서 가려진 3D 볼륨이지만, 새로운 시점에서 잠재적으로 보인다. 
+    새로운 시점의 범위를 고려하고 입력된 프래그먼트의 가장자리와 새로운 시점의 범위를 사용하여 정의한다. 
+    PVHVs를 사용하면 다중 프래그먼트 렌더링에서 개별 새로운 시점을 반복하지 않고 소스 단편의 가시성을 일괄 테스트할 수 있게 알고리즘을 구상할 것이며, 
+    이로써 와핑 전에 중복된 단편을 제거하는 것을 목표로 한다. 
+    또한, 정의한 PVHVs 모델을 Depth Peeling(DP)에서 실현하여 렌더링 결과를 보인다. 
+    이를 Effective Depth Peeling (EDP)이라 정의할 것이고 이는 PVHV을 기반하여 메모리, 품질 및 다중 뷰 와핑의 성능 측면에서 개선되는 것을 증명하였다."
+    highlights:
+      - "ACM Trans. Graphics (Proc. SIGGRAPH), 42(4), 86:1–11, 2023."
+      - "(Submitted) Jan. 25, (Accepted) Apr. 28, (Published) Jul. 26, 2023"
+      - "IF=6.2, PCTL=90.3. ISSN: 0730-0301, ACM, USA"
+# skills:
+#   - name: "C++ Application Development"
+#     level: "junior"
+#     keywords:
+#       - "C++"
+#   - name: "Shader Programming"
+#     level: "junior"
+#     keywords:
+#       - "OpenGL"
+#       - "GLSL"      
+#   - name: "Sociability"
+#     level: "master"
+#     keywords:
+#       - "Leadership"
+#       - "Affable"            
+  # - name: "Compression"
+  #   level: "Master"
+  #   keywords:
+  #     - "Mpeg"
+  #     - "MP4"
+  #     - "GIF"
+# languages:
+#   - language: "English"
+#     fluency: "Native speaker"
+# interests:
+#   - name: ""
+#     keywords:
+#       - "Ferrets"
+#       - "Unicorns"
+# references:
+#   - name: "Erlich Bachman"
+#     reference: >
+#       It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
+#       Company proved that he will be a valuable addition to any company.
