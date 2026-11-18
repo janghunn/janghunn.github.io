@@ -1,0 +1,10 @@
+/* Self-hosted Lato 2 (Latin + notation subsets: Regular, Semibold, Bold, Black), SIL Open Font License 1.1, see OFL-Lato.txt. */
+@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url('Lato-400.woff2') format('woff2')}
+@font-face{font-family:'Lato';font-style:normal;font-weight:600;font-display:swap;src:url('Lato-600.woff2') format('woff2')}
+@font-face{font-family:'Lato';font-style:normal;font-weight:700;font-display:swap;src:url('Lato-700.woff2') format('woff2')}
+@font-face{font-family:'Lato';font-style:normal;font-weight:900;font-display:swap;src:url('Lato-900.woff2') format('woff2')}
+/* S-Core Dream for Korean (4 Regular as 400, 6 Bold as 700): the unmodified official OTF files, no conversion or
+   subsetting, licence notice in LICENSE-S-Core-Dream.txt / .png, hashes in SHA256SUMS. The family is referenced only
+   under html[lang="ko"] (tokens.css), so English pages never download it. */
+@font-face{font-family:'S-Core Dream';font-style:normal;font-weight:400;font-display:swap;src:url('SCDream4.otf') format('opentype')}
+@font-face{font-family:'S-Core Dream';font-style:normal;font-weight:700;font-display:swap;src:url('SCDream6.otf') format('opentype')}

@@ -1,0 +1,107 @@
+/* A0 conference poster. The sheet is sized and laid out in mm, so screen and print share one layout:
+   portrait 841 × 1189 mm with a 3-column grid, landscape 1189 × 841 mm with a 4-column grid (html[data-orient],
+   set by poster.js from ?orient= or the toggle). On screen the sheet is zoomed to the stage width (--poster-fit);
+   print ignores the zoom and fills one page exactly. Every colour is a token; loads after components.css. */
+
+/* ── screen chrome: orientation bar and stage ── */
+.poster-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--s2) var(--s3);padding-top:var(--s3);padding-bottom:var(--s3)}
+.poster-size{margin:0;color:var(--muted);font-size:.92rem}
+html[data-orient="landscape"] .o-portrait,html:not([data-orient="landscape"]) .o-landscape{display:none}
+.poster-stage{max-width:var(--maxw);margin:0 auto;padding:0 var(--s3) var(--s4);overflow-x:auto}
+@media(min-width:640px){.poster-stage{padding:0 var(--s4) var(--s5)}}
+@media screen{.sheet{zoom:var(--poster-fit,.25);outline:1mm solid var(--line)}}
+
+/* ── the sheet ── */
+.sheet{display:flex;flex-direction:column;gap:12mm;width:841mm;height:1189mm;overflow:hidden;padding:0 0 16mm;
+  background:var(--bg);color:var(--ink);font:400 12.5mm/1.45 var(--font-body)}
+html[data-orient="landscape"] .sheet{width:1189mm;height:841mm;gap:10mm;padding-bottom:12mm}
+html[lang="ko"] .sheet{line-height:1.6}
+.sheet p{margin:0 0 .5em}
+.sheet figure{margin:0}
+.sheet sup{font-size:.6em;line-height:0}
+
+/* title band */
+.p-title{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:0 16mm;padding:22mm 30mm 16mm;
+  background:var(--surface);border-bottom:3mm solid var(--accent)}
+html[data-orient="landscape"] .p-title{padding:16mm 30mm 12mm}
+.p-mark{width:80mm;height:auto}
+.p-mark .k1{fill:var(--accent);opacity:.9}.p-mark .k2{fill:var(--compare);opacity:.85}.p-mark .k3{fill:var(--series-other);opacity:.55}
+.p-title h1{margin:0 0 6mm;font-weight:700;line-height:1.1}
+.p-brand{display:block;font:900 40mm/1 var(--font-sans);color:var(--accent);letter-spacing:-.01em;margin-bottom:3mm}
+html[lang="ko"] .p-brand{font-family:"Lato",var(--font-ko);font-weight:700;letter-spacing:0}
+.p-sub{display:block;font:700 21mm/1.2 var(--font-body);color:var(--ink)}
+.p-authors{font-size:14mm;font-weight:700;margin:0 0 2mm!important}
+.p-affil{color:var(--muted);margin:0!important}
+.p-qr{display:grid;justify-items:center;gap:3mm;width:84mm}
+.p-qr svg{display:block;width:72mm;height:72mm}
+.qr-bg{fill:var(--surface)}
+.qr-slot{fill:none;stroke:var(--control);stroke-width:.3;stroke-dasharray:1 .8}
+.qr-m{fill:var(--ink)}
+.p-qr figcaption{font-size:7.5mm;line-height:1.3;color:var(--muted);text-align:center}
+
+/* takeaway band */
+.p-band{margin:0 30mm;padding:9mm 14mm;border-radius:7mm;background:var(--band);color:var(--on-band)}
+.p-band p{margin:0;font-weight:700;font-size:16mm;line-height:1.3}
+
+/* numbered section grid */
+.p-grid{flex:1 1 auto;min-height:0;margin:0 30mm;display:grid;gap:12mm;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  grid-template-areas:"intro teaser teaser" "method equation results" "conclusion references references"}
+html[data-orient="landscape"] .p-grid{gap:10mm;grid-template-columns:repeat(4,minmax(0,1fr));
+  grid-template-areas:"intro teaser teaser method" "equation results conclusion references"}
+.p-block{min-width:0;min-height:0;padding:10mm 12mm;background:var(--surface);border:.6mm solid var(--line);border-radius:7mm}
+.p-block[data-block="intro"]{grid-area:intro}.p-block[data-block="teaser"]{grid-area:teaser}
+.p-block[data-block="method"]{grid-area:method}.p-block[data-block="equation"]{grid-area:equation}
+.p-block[data-block="results"]{grid-area:results}.p-block[data-block="conclusion"]{grid-area:conclusion}
+.p-block[data-block="references"]{grid-area:references}
+.p-block>:last-child{margin-bottom:0}
+.p-head{display:flex;align-items:center;gap:6mm;margin-bottom:6mm}
+.p-disc{flex:none;display:grid;place-items:center;width:25mm;height:25mm;border-radius:50%;background:var(--accent);color:var(--on-accent);font:900 14mm/1 var(--font-sans)}
+.p-head h2{font:700 18mm/1.15 var(--font-body);letter-spacing:0}
+.p-list,.p-steps,.p-refs{margin:0;padding-left:1.2em}
+.p-list li,.p-steps li{margin-bottom:.35em}
+.p-list li::marker,.p-steps li::marker{color:var(--accent);font-weight:700}
+.p-refs{list-style:none;padding:0;font-size:.9em}
+.p-refs li{margin-bottom:.3em}
+.p-note{color:var(--muted)}
+
+/* teaser figure (inline SVG) */
+.p-fig svg{display:block;width:100%;height:auto;font-family:var(--font-body)}
+.tz-frame{fill:var(--code-bg);stroke:var(--line);stroke-width:3}
+.tz-path{fill:none;stroke:var(--series-other);stroke-width:5;stroke-dasharray:4 14;stroke-linecap:round}
+.tz-acc{fill:var(--accent)}
+.tz-cmp{fill:var(--compare)}
+.tz-lbl{fill:var(--muted);font-size:40px;font-weight:700}
+.p-fig figcaption{margin-top:4mm;font-size:.8em;color:var(--muted)}
+
+/* placeholders and the headline stat */
+.p-slot{height:auto;aspect-ratio:16/7;margin-top:6mm;border-radius:4mm}
+.p-slot span{font-size:.75em}
+.p-stat{display:flex;align-items:center;gap:6mm;margin-top:7mm;padding:6mm 8mm;background:var(--accent-tint);border-radius:5mm}
+.p-stat .p-big{flex:none;font:900 24mm/1 var(--font-sans);color:var(--accent-strong)}
+.p-stat p{margin:0;font-size:.9em}
+
+/* key equation */
+.p-eq{margin:0 0 6mm;padding:7mm 10mm;background:var(--accent-soft);color:var(--ink);border-left:2.5mm solid var(--accent);border-radius:5mm}
+.p-eq math{display:block math;margin:0;font-size:1.6em}
+
+/* results table */
+.sheet table{font-size:1em;line-height:1.4}
+.sheet caption{caption-side:top;padding:0 0 .5em;font-size:.8em;color:var(--muted)}
+.sheet th,.sheet td{padding:.35em .6em;border-bottom-width:.4mm}
+
+/* footer strip */
+.p-foot{display:flex;align-items:center;gap:12mm;margin:0 30mm;color:var(--muted);font-size:.82em}
+.p-logos{display:flex;gap:8mm;flex:none}
+.p-logos .ph{width:80mm;height:30mm;padding:2mm;border-radius:3mm}
+.p-logos .ph span{font-size:7.5mm;line-height:1.3;padding:1mm 2mm}
+.p-foot-text p{margin:0 0 .2em}
+
+/* ── print: one A0 page, light tokens (kit.js), backgrounds kept ── */
+@page{size:841mm 1189mm;margin:0}  /* poster.js replaces this with the chosen orientation */
+@media print{
+  html,body{margin:0;padding:0;background:none}
+  .poster-bar,body>footer{display:none!important}
+  .poster-stage{max-width:none;margin:0;padding:0;overflow:visible}
+  .sheet,.sheet *{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+}

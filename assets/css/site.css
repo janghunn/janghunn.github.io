@@ -1,0 +1,2 @@
+/* The CV masthead has only the title block. */
+.cv-header .wrap{grid-template-columns:minmax(0,1fr);grid-template-areas:"title"}

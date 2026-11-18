@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>
+/* Pre-paint: theme from ?theme=, then the saved choice, then the system; language from ?lang=, then the saved choice, then English. */
+(function () {
+  var d = document.documentElement, q, t, l;
+  try { q = new URLSearchParams(location.search); t = q.get('theme'); l = q.get('lang'); } catch (e) {}
+  function saved(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  if (t !== 'light' && t !== 'dark') t = saved('ws-theme');
+  if (t !== 'light' && t !== 'dark') t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  if (l !== 'en' && l !== 'ko') l = saved('ws-lang');
+  if (l !== 'en' && l !== 'ko') l = 'en';
+  d.setAttribute('data-theme', t);
+  d.lang = l;
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title data-ko="Janghun Kim · 이력">Janghun Kim · CV</title>
+<meta name="description" content="Janghun Kim: publications, experience and education.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/Lato-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Lato-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/accents.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/kit.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main" data-ko="본문으로 건너뛰기">Skip to content</a>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="#top" aria-label="Janghun Kim, top of page" data-ko-label="Janghun Kim, 페이지 맨 위">
+    <svg viewBox="0 0 26 26" aria-hidden="true"><circle class="m1" cx="10" cy="13" r="8"/><circle class="m2" cx="19" cy="9" r="5"/></svg><span>Janghun Kim</span>
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="section-nav" hidden data-ko="메뉴">Menu</button>
+  <nav id="section-nav" aria-label="Sections" data-ko-label="섹션"><a href="#about" data-ko="소개">About</a><a href="#publications" data-ko="논문">Publications</a><a href="#experience" data-ko="경력">Experience</a><a href="#education" data-ko="학력">Education</a></nav>
+  <div class="controls">
+    <button class="ctl icon" type="button" data-theme-toggle aria-label="Switch to dark theme">
+      <svg class="ico-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+      <svg class="ico-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+    </button>
+    <button class="ctl" type="button" data-lang-toggle lang="ko">한국어</button>
+  </div>
+</div></header>
+<main id="main" tabindex="-1">
+<section id="top" class="masthead cv-header" aria-label="Name, role and contact" data-ko-label="이름, 직책, 연락처"><div class="wrap">
+  <div class="title-block">
+    <h1><span class="t-brand">Janghun Kim</span> <span class="t-sub" data-ko="한국전자통신연구원 (ETRI)">Electronics and Telecommunications Research Institute (ETRI)</span></h1>
+    <p class="authors"><span class="affiliation" data-ko="대한민국 대전">Daejeon, South Korea</span></p>
+    <div class="btns contact"><a class="btn primary" href="mailto:janghun@etri.re.kr" data-ko="이메일">E-mail</a><a class="btn" href="https://github.com/janghunn">GitHub</a><a class="btn" href="https://orcid.org/0000-0003-2087-2191">ORCID</a><a class="btn" href="https://dblp.org/pid/354/3275.html">DBLP</a></div>
+  </div>
+</div></section>
+
+<section id="about" aria-labelledby="about-title"><div class="wrap"><div class="card">
+  <div class="panel-head"><h2 id="about-title" data-ko="소개">About</h2></div>
+  <p data-ko="대전의 한국전자통신연구원(ETRI)에서 일하고 있습니다. 논문 주제는 다중 시점 워핑을 위한 은닉 볼륨 렌더링과 피드포워드 가우시안 스플래팅입니다.">I work at the Electronics and Telecommunications Research Institute (ETRI) in Daejeon, South Korea. My publications cover hidden-volume rendering for multi-view warping and feed-forward Gaussian splatting.</p>
+  <ul class="tags" aria-label="Publication topics" data-ko-label="논문 주제"><li class="tag" data-ko="다중 시점 워핑">Multi-view warping</li><li class="tag" data-ko="은닉 볼륨 렌더링">Hidden-volume rendering</li><li class="tag" data-ko="깊이 필링">Depth peeling</li><li class="tag" data-ko="피드포워드 가우시안 스플래팅">Feed-forward Gaussian splatting</li></ul>
+</div></div></section>
+
+<section id="publications" aria-labelledby="publications-title"><div class="wrap"><div class="card">
+  <div class="panel-head"><h2 id="publications-title" data-ko="논문">Publications</h2></div>
+  <p class="note" data-ko="최신순 · 내 이름은 굵게">Newest first · my name in bold</p>
+  <ol class="pubs">
+    <li class="pub"><span class="venue-tag">ACCV 2026</span><div>
+      <p class="pub-title" lang="en">PaveSplat: Resolution-Robust Feed-Forward Gaussian Splatting with Residually Corrected Surface-Aligned Covariances</p>
+      <p class="pub-authors"><span class="me">Janghun Kim</span>, Hyun-Cheol Kim, Eunbin An, Myeonghun Oh, Hyon-Gon Choo</p>
+      <p class="pub-venue" data-ko="아시아 컴퓨터 비전 학회 (ACCV), 2026 · 게재 승인">Asian Conference on Computer Vision (ACCV), 2026 · Accepted</p>
+      <div class="btns"><a class="btn" href="https://janghunn.github.io/pavesplat/" data-ko="프로젝트">Project</a><a class="btn" href="https://github.com/janghunn/pavesplat" data-ko="코드">Code</a><a class="btn" href="https://huggingface.co/janghunn/pavesplat" data-ko="모델 가중치">Model weights</a></div>
+    </div></li>
+    <li class="pub"><span class="venue-tag">TOG 2023</span><div>
+      <p class="pub-title" lang="en">Potentially Visible Hidden-Volume Rendering for Multi-View Warping</p>
+      <p class="pub-authors"><span class="me">Janghun Kim</span>, Sungkil Lee</p>
+      <p class="pub-venue" data-ko="ACM Transactions on Graphics 42(4), 논문 번호 86, 2023">ACM Transactions on Graphics 42(4), Article 86, 2023</p>
+      <div class="btns"><a class="btn" href="https://doi.org/10.1145/3592108" data-ko="논문">Paper</a><a class="btn" href="https://janghunn.github.io/pvhv/" data-ko="프로젝트">Project</a><a class="btn" href="https://github.com/janghunn/pvhv" data-ko="코드 (재구현)">Code (re-implementation)</a></div>
+    </div></li>
+  </ol>
+</div></div></section>
+
+<section id="experience" aria-labelledby="experience-title"><div class="wrap"><div class="card">
+  <div class="panel-head"><h2 id="experience-title" data-ko="경력">Experience</h2></div>
+  <ol class="timeline">
+    <li class="tl-item"><p class="tl-date" data-ko="2026.02 – 현재">2026.02 – now</p><div class="tl-body"><h3 data-ko="한국전자통신연구원 (ETRI)">Electronics and Telecommunications Research Institute (ETRI)</h3><p class="tl-org" data-ko="공간미디어플랫폼연구실 · 연구원">Spatial Media Platform Research Section · Researcher</p><p class="tl-org" data-ko="대전">Daejeon, South Korea</p></div></li>
+    <li class="tl-item"><p class="tl-date" data-ko="2024.08 – 2026.01">2024.08 – 2026.01</p><div class="tl-body"><h3 data-ko="한국과학기술정보연구원 (KISTI)">Korea Institute of Science and Technology Information (KISTI)</h3><p class="tl-org" data-ko="오픈XR플랫폼융합연구단 · 연구 엔지니어">Open Extended Reality Convergence Research Center · Research Engineer</p><p class="tl-org" data-ko="대전">Daejeon, South Korea</p></div></li>
+  </ol>
+</div></div></section>
+
+<section id="education" aria-labelledby="education-title"><div class="wrap"><div class="card">
+  <div class="panel-head"><h2 id="education-title" data-ko="학력">Education</h2></div>
+  <ol class="timeline">
+    <li class="tl-item"><p class="tl-date" data-ko="2022.09 – 2024.08">2022.09 – 2024.08</p><div class="tl-body"><h3 data-ko="석사, Computer Science and Engineering">M.S., Computer Science and Engineering</h3><p class="tl-org" data-ko="성균관대학교">Sungkyunkwan University</p></div></li>
+    <li class="tl-item"><p class="tl-date" data-ko="2017.03 – 2022.08">2017.03 – 2022.08</p><div class="tl-body"><h3 data-ko="학사, Computer Science and Engineering">B.S., Computer Science and Engineering</h3><p class="tl-org" data-ko="성균관대학교">Sungkyunkwan University</p></div></li>
+  </ol>
+</div></div></section>
+</main>
+<footer><div class="wrap">
+  <p data-ko="© 2026 Janghun Kim · web-style-classic으로 만듦 · Lato 글꼴은 SIL Open Font License 1.1을 따릅니다">© 2026 Janghun Kim · Built with web-style-classic · Lato font under the SIL Open Font License 1.1</p>
+  <p data-ko-only hidden lang="ko">이 페이지에는 에스코어가 제공한 에스코어 드림 폰트가 적용되어 있습니다.</p>
+</div></footer>
+</body>
+</html>

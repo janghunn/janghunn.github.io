@@ -1,0 +1,63 @@
+/* Paper & Lamp tokens: warm paper (light) and lamplight (dark). Colours live only here and in accents.css;
+   tools/check_kit.py checks every text/UI pair in both themes. The pre-paint script in each page sets
+   html[data-theme] (light | dark) and html[lang] (en | ko); kit.js maps print to the light palette. */
+:root {
+  color-scheme: light;
+  /* Neutral layer, light: shared by every page, do not re-theme. */
+  --bg:#f3efe7; --surface:#fffcf7; --ink:#22201c; --muted:#5e584f; --line:#e2dacd;
+  --control:#857b6c;            /* button/select borders, dashed placeholders */
+  --focus:#a3520f;              /* focus ring */
+  --code-bg:#f8f4ec;            /* code blocks */
+  --media-bg:#15130f;           /* behind video and figure crops */
+  --ph-stripe:#ddd5c7;          /* placeholder stripes */
+  --on-media:#ffffff;           /* text and outlines over media */
+  --warn:#c25400; --warn-text:#a14600; --warn-fill:#fbeee2;   /* scope / caution box */
+  --series-other:#9a948a; --series-other-text:#6b655c;       /* other plot series */
+  --font-sans:"Lato","Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --font-ko:"S-Core Dream","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR","Noto Sans CJK KR",system-ui,sans-serif;
+  --font-mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  --font-body:var(--font-sans);
+  --lh:1.6;                    /* body line height; Korean sets its own */
+  --s1:.25rem; --s2:.5rem; --s3:1rem; --s4:1.5rem; --s5:2.5rem; --s6:4rem;
+  --r-s:8px; --r:12px; --card-r:16px; --maxw:1240px; --nav-h:60px;
+
+  /* === ACCENT: per-project colour, light; re-theme by replacing this block and ACCENT-DARK (see COLOR.md) === */
+  --accent:#26282d;             /* fills, links, borders, accent text */
+  --accent-strong:#1c1e22;      /* text on tints, hover */
+  --accent-tint:#ebe9e5;        /* stat tile, highlight row, tags */
+  --accent-soft:#d8d6d3;        /* equation box */
+  --on-accent:#ffffff;          /* text on accent fill */
+  --band:#26282d;               /* takeaway band */
+  --on-band:#ffffff;            /* text on the band */
+  --compare:#e69f00;            /* comparison / baseline series and borders */
+  --compare-text:#8f6300;       /* comparison labels */
+  --compare-tint:#fcf1d9;       /* comparison box fill */
+  /* === /ACCENT === */
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  /* Neutral layer, dark (lamplight). */
+  --bg:#191714; --surface:#23201b; --ink:#efe8dc; --muted:#b3a999; --line:#3a342c;
+  --control:#8a8070;
+  --focus:#f0b45a;
+  --code-bg:#1c1a16;
+  --media-bg:#0d0c0a;
+  --ph-stripe:#38322a;
+  --on-media:#ffffff;
+  --warn:#ec8a3c; --warn-text:#f2a468; --warn-fill:#3a2619;
+  --series-other:#8a8378; --series-other-text:#ada597;
+
+  /* === ACCENT-DARK: per-project colour, dark; same 10 tokens as ACCENT === */
+  --accent:#929396;
+  --accent-strong:#adaeb0;
+  --accent-tint:#2d2a26;
+  --accent-soft:#373531;
+  --on-accent:#000000;
+  --band:#393734;
+  --on-band:#efe8dc;
+  --compare:#e69f00;
+  --compare-text:#e69f00;
+  --compare-tint:#3a2f18;
+  /* === /ACCENT-DARK === */
+}
+html[lang="ko"] { --font-body:var(--font-ko); --lh:1.75; }
